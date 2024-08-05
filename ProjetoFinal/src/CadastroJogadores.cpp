@@ -14,7 +14,7 @@ bool CadastroJogadores::cadastrarJogador(const std::string& apelido, const std::
 
 bool CadastroJogadores::removerJogador(const std::string& apelido) {
     auto it = std::remove_if(jogadores.begin(), jogadores.end(),
-                             &apelido { return jogador.getApelido() == apelido; });
+                             [&apelido](const Jogador& jogador) { return jogador.getApelido() == apelido; });
     if (it != jogadores.end()) {
         jogadores.erase(it, jogadores.end());
         return true;
@@ -35,10 +35,10 @@ void CadastroJogadores::listarJogadores(char criterio) const {
     std::vector<Jogador> copiaJogadores = jogadores;
     if (criterio == 'A') {
         std::sort(copiaJogadores.begin(), copiaJogadores.end(),
-                   { return a.getApelido() < b.getApelido(); });
+                  [](const Jogador& a, const Jogador& b) { return a.getApelido() < b.getApelido(); });
     } else if (criterio == 'N') {
         std::sort(copiaJogadores.begin(), copiaJogadores.end(),
-                   { return a.getNome() < b.getNome(); });
+                  [](const Jogador& a, const Jogador& b) { return a.getNome() < b.getNome(); });
     }
 
     for (const auto& jogador : copiaJogadores) {
