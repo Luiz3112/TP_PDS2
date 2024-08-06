@@ -1,0 +1,9 @@
+# Ignorar arquivos de objeto
+obj/*.o
+
+# Ignorar executáveis
+bin/jogo
+
+# Ignorar outros arquivos temporários
+*.log
+*.tmp
