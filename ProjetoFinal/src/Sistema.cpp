@@ -2,6 +2,7 @@
 #include "Reversi.hpp"
 #include "Lig4.hpp"
 #include <iostream>
+#include <sstream>
 
 void Sistema::executar() {
     // Implementação do loop principal já está no main.cpp ...
@@ -33,20 +34,29 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
 
     partida->iniciar();
     std::string jogada;
+    char jogadorAtual = 'X'; // Começa com o jogador 1
     while (!partida->verificarVitoria()) {
-        std::cout << "Turno de jogador " << apelido1 << ": ";
+        std::string apelidoAtual = (jogadorAtual == 'X') ? apelido1 : apelido2;
+        std::cout << "Turno de jogador " << apelidoAtual << ": ";
         std::getline(std::cin, jogada);
+        std::istringstream iss(jogada);
         int linha, coluna;
-        try {
-            linha = std::stoi(jogada.substr(0, jogada.find(' ')));
-            coluna = std::stoi(jogada.substr(jogada.find(' ') + 1));
-        } catch (...) {
-            std::cout << "ERRO: formato incorreto" << std::endl;
-            continue;
+        if (jogo == "R") { // Reversi
+            if (!(iss >> linha >> coluna)) {
+                std::cout << "ERRO: formato incorreto" << std::endl;
+                continue;
+            }
+        } else if (jogo == "L") { // Lig4
+            if (!(iss >> coluna)) {
+                std::cout << "ERRO: formato incorreto" << std::endl;
+                continue;
+            }
+            linha = 0; // Linha não é usada no Lig4
         }
 
         if (partida->validarJogada(linha, coluna)) {
             partida->realizarJogada(linha, coluna);
+            jogadorAtual = (jogadorAtual == 'X') ? 'O' : 'X'; // Alterna o jogador
         } else {
             std::cout << "ERRO: jogada inválida" << std::endl;
         }
@@ -55,6 +65,7 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
     delete partida;
     return true;
 }
+
 
 void Sistema::finalizarSistema() {
     std::cout << "Sistema finalizado. Obrigado por jogar!" << std::endl;
@@ -69,3 +80,5 @@ Jogo* Sistema::criarJogo(const std::string& jogo) {
     }
     return nullptr;
 }
+
+

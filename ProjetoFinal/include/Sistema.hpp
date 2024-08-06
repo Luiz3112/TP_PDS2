@@ -13,7 +13,6 @@ public:
     void listarJogadores(char criterio);
     bool executarPartida(const std::string& jogo, const std::string& apelido1, const std::string& apelido2);
     void finalizarSistema();
-    char getJogadorAtual() const;
 
 private:
     CadastroJogadores cadastro;
