@@ -34,7 +34,7 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
 
     partida->iniciar();
     std::string jogada;
-    bool turnoJogador1 = true; // Começa com o jogador 1
+    bool turnoJogador1 = true; 
     while (!partida->verificarVitoria()) {
         std::string apelidoAtual = turnoJogador1 ? apelido1 : apelido2;
         std::cout << "Turno de jogador " << apelidoAtual << ": ";
@@ -56,7 +56,7 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
 
         if (partida->validarJogada(linha, coluna)) {
             partida->realizarJogada(linha, coluna);
-            turnoJogador1 = !turnoJogador1; // Alterna o jogador
+            turnoJogador1 = !turnoJogador1; 
         } else {
             std::cout << "ERRO: jogada inválida" << std::endl;
         }
