@@ -80,5 +80,3 @@ Jogo* Sistema::criarJogo(const std::string& jogo) {
     }
     return nullptr;
 }
-
-
