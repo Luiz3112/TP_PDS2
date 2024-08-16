@@ -72,7 +72,7 @@ void CadastroJogadores::listarJogadores(char criterio) const {
                   [](const Jogador& a, const Jogador& b) { return a.getApelido() < b.getApelido(); });
     } else if (criterio == 'N') {
         std::sort(copiaJogadores.begin(), copiaJogadores.end(),
-                  [](const Jogador& a, const Jogador& b) { return a.getNome() > b.getNome(); });
+                  [](const Jogador& a, const Jogador& b) { return a.getNome() < b.getNome(); });
     }
 
     for (const auto& jogador : copiaJogadores) {
