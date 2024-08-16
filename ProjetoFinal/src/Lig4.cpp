@@ -8,6 +8,7 @@ void Lig4::iniciar() {
 }
 
 void Lig4::imprimirTabuleiro() {
+
     std::cout << "Estado atual do tabuleiro de Lig4:" << std::endl;
     for (const auto& linha : tabuleiro) {
         for (const auto& celula : linha) {
@@ -15,6 +16,7 @@ void Lig4::imprimirTabuleiro() {
         }
         std::cout << "|" << std::endl;
     }
+    std::cout << " 0 1 2 3 4 5 6 " << std::endl;  //locazar a coluna
 }
 
 bool Lig4::validarJogada(int linha, int coluna) {

@@ -13,7 +13,11 @@ void Reversi::iniciar() {
 
 void Reversi::imprimirTabuleiro() {
     std::cout << "Estado atual do tabuleiro de Reversi:" << std::endl;
+    std::cout << "  0 1 2 3 4 5 6 7 " << std::endl;
+    int i = 0;
     for (const auto& linha : tabuleiro) {
+        std::cout << i;
+        i++;
         for (const auto& celula : linha) {
             std::cout << "|" << (celula == ' ' ? ' ' : celula);
         }
