@@ -35,13 +35,16 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
     partida->iniciar();
     std::string jogada;
     bool turnoJogador1 = true; 
+    std::string apelidoAtual = apelido1;
     while (!partida->verificarVitoria()) {
-        std::string apelidoAtual = turnoJogador1 ? apelido1 : apelido2;
+        apelidoAtual = turnoJogador1 ? apelido1 : apelido2;
         std::cout << "Turno de jogador " << apelidoAtual << ": ";
         std::getline(std::cin, jogada);
         std::istringstream iss(jogada);
         int linha, coluna;
-        if (jogo == "R") { // Reversi
+        if(jogada == "SAIR"){     //funcao criada para sair no meio do jogo  
+            break;
+        }else if (jogo == "R") { // Reversi
             if (!(iss >> linha >> coluna)) {
                 std::cout << "ERRO: formato incorreto" << std::endl;
                 continue;
@@ -61,7 +64,12 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
             std::cout << "ERRO: jogada inválida" << std::endl;
         }
     }
-
+    
+    if(jogada == "SAIR"){
+        std::cout << apelidoAtual << " DESISTIU" << std::endl;   
+    }else {
+        std::cout << " VITÓRIA "  << apelidoAtual << "!" << std::endl;
+    }
     delete partida;
     return true;
 }
