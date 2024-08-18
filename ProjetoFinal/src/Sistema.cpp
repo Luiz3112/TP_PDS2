@@ -63,6 +63,7 @@ void Sistema::listarJogadores(char criterio) {
  * - Gerencia os turnos dos jogadores, validando e executando jogadas.
  * - Permite que os jogadores saiam no meio do jogo digitando "SAIR".
  * - Detecta se houve uma saida de jogador e determina o vencedor.
+ * - Adiciona vitria e derrota nas estatísticas dos jogares.
  * 
  * @param jogo O tipo de jogo a ser jogado ("R" para Reversi, "L" para Lig4).
  * @param apelido1 O apelido do jogador 1.
@@ -123,6 +124,11 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
     }else {
         std::cout << " VITÓRIA "  << apelidoAtual << "!" << std::endl;
     }
+
+    cadastro.buscarJogador(apelidoAtual)->adicionarVitoria(jogo);
+    apelidoAtual = turnoJogador1 ? apelido1 : apelido2;
+    cadastro.buscarJogador(apelidoAtual)->adicionarDerrota(jogo);
+    
     delete partida;
     return true;
 }
