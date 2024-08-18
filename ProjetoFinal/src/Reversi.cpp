@@ -58,7 +58,9 @@ void Reversi::alternarJogador() {
 }
 
 bool Reversi::jogadaValida(int linha, int coluna, char jogador) {
-    if (tabuleiro[linha][coluna] != ' ') {
+    if( linha < 0 || linha > 8 || coluna < 0 || coluna > 8){
+        return false;
+    }else if (tabuleiro[linha][coluna] != ' ') {
         return false;
     }
     for (int dLinha = -1; dLinha <= 1; ++dLinha) {
