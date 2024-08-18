@@ -8,11 +8,13 @@ void Reversi::iniciar() {
     tabuleiro[4][3] = 'X';
     tabuleiro[4][4] = 'O';
     jogadorAtual = 'X';
+    std::cout << "\nCOMO JOGAR-> digite 'numero linha' 'numero coluna' da jogada" << std::endl;
+    std::cout << "SAIR DO JOGO-> digite 'SAIR'\n";
     imprimirTabuleiro();
 }
 
 void Reversi::imprimirTabuleiro() {
-    std::cout << "Estado atual do tabuleiro de Reversi:" << std::endl;
+    std::cout << "\nEstado atual do tabuleiro de Reversi:" << std::endl;
     std::cout << "  0 1 2 3 4 5 6 7 " << std::endl;
     int i = 0;
     for (const auto& linha : tabuleiro) {
@@ -47,7 +49,7 @@ void Reversi::realizarJogada(int linha, int coluna) {
         alternarJogador();
         imprimirTabuleiro();
     } else {
-        std::cout << "ERRO: jogada inválida" << std::endl;
+        std::cout << "ERRO: jogada inválida\n" << std::endl;
     }
 }
 

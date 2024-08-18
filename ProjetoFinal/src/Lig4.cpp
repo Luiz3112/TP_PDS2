@@ -13,6 +13,8 @@
 void Lig4::iniciar() {
     tabuleiro = std::vector<std::vector<char>>(6, std::vector<char>(7, ' '));
     jogadorAtual = 'X';
+    std::cout << "\nCOMO JOGAR-> digite 'numero coluna' da jogada" << std::endl;
+    std::cout << "SAIR DO JOGO-> digite 'SAIR'\n";
     imprimirTabuleiro();
 }
 
@@ -26,7 +28,7 @@ void Lig4::iniciar() {
  */
 void Lig4::imprimirTabuleiro() {
 
-    std::cout << "Estado atual do tabuleiro de Lig4:" << std::endl;
+    std::cout << "\nEstado atual do tabuleiro de Lig4:" << std::endl;
     for (const auto& linha : tabuleiro) {
         for (const auto& celula : linha) {
             std::cout << "|" << celula;
@@ -94,7 +96,7 @@ void Lig4::realizarJogada(int linha, int coluna) {
         alternarJogador();
         imprimirTabuleiro();
     } else {
-        std::cout << "ERRO: jogada inválida" << std::endl;
+        std::cout << "ERRO: jogada inválida\n" << std::endl;
     }
 }
 

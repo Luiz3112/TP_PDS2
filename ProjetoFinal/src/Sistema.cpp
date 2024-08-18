@@ -87,9 +87,11 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
     std::string jogada;
     bool turnoJogador1 = true; 
     std::string apelidoAtual = apelido1;
+    char simboloAtual = 'O';
     while (!partida->verificarVitoria()) {
+        simboloAtual = (simboloAtual == 'X') ? 'O' : 'X';
         apelidoAtual = turnoJogador1 ? apelido1 : apelido2;
-        std::cout << "Turno de jogador " << apelidoAtual << ": ";
+        std::cout << "Turno de jogador " << apelidoAtual << " (" << simboloAtual << "): ";
         std::getline(std::cin, jogada);
         std::istringstream iss(jogada);
         int linha, coluna;
@@ -97,12 +99,12 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
             break;
         }else if (jogo == "R") { // Reversi
             if (!(iss >> linha >> coluna)) {
-                std::cout << "ERRO: formato incorreto" << std::endl;
+                std::cout << "ERRO: formato incorreto\n" << std::endl;
                 continue;
             }
         } else if (jogo == "L") { // Lig4
             if (!(iss >> coluna)) {
-                std::cout << "ERRO: formato incorreto" << std::endl;
+                std::cout << "ERRO: formato incorreto\n" << std::endl;
                 continue;
             }
             linha = 0; // Linha não é usada no Lig4
@@ -112,17 +114,17 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
             partida->realizarJogada(linha, coluna);
             turnoJogador1 = !turnoJogador1; 
         } else {
-            std::cout << "ERRO: jogada inválida" << std::endl;
+            std::cout << "ERRO: jogada inválida\n" << std::endl;
         }
     }
     
     if(jogada == "SAIR"){
-        std::cout << apelidoAtual << " SAIU DO JOGO" << std::endl;
+        std::cout << "\n  " << apelidoAtual << " SAIU DO JOGO" << std::endl;
         apelidoAtual = !turnoJogador1 ? apelido1 : apelido2;
-        std::cout << " VITÓRIA "  << apelidoAtual << "!" << std::endl;
+        std::cout << "  VITÓRIA "  << apelidoAtual << "!\n" << std::endl;
 
     }else {
-        std::cout << " VITÓRIA "  << apelidoAtual << "!" << std::endl;
+        std::cout << "\n VITÓRIA "  << apelidoAtual << "!\n" << std::endl;
     }
 
     cadastro.buscarJogador(apelidoAtual)->adicionarVitoria(jogo);

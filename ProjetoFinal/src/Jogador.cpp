@@ -68,5 +68,5 @@ void Jogador::adicionarDerrota(const std::string& jogo) {
 void Jogador::imprimirEstatisticas() const {
     std::cout << apelido << " " << nome << std::endl;
     std::cout << "REVERSI - V: " << vitoriasReversi << " D: " << derrotasReversi << std::endl;
-    std::cout << "LIG4 - V: " << vitoriasLig4 << " D: " << derrotasLig4 << std::endl;
+    std::cout << "LIG4 - V: " << vitoriasLig4 << " D: " << derrotasLig4 << std::endl << std::endl; 
 }
