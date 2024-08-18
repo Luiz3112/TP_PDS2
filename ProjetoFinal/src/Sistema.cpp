@@ -4,22 +4,72 @@
 #include <iostream>
 #include <sstream>
 
+/**
+ * @brief Executa o loop principal do sistema.
+ * 
+ * A implementação do loop principal está localizada no main.cpp.
+ */
 void Sistema::executar() {
     // Implementação do loop principal já está no main.cpp ...
 }
 
+/**
+ * @brief Cadastra um novo jogador.
+ * 
+ * Este método chama a função `cadastrarJogador` da classe `CadastroJogadores` 
+ * para registrar um novo jogador no sistema.
+ * 
+ * @param apelido O apelido do jogador a ser cadastrado.
+ * @param nome O nome do jogador a ser cadastrado.
+ * @return 'true' se o jogador foi cadastrado com sucesso, 'false' se o jogador
+ * já existe ou se houve algum problema no cadastro.
+ */
 bool Sistema::cadastrarJogador(const std::string& apelido, const std::string& nome) {
     return cadastro.cadastrarJogador(apelido, nome);
 }
 
+/**
+ * @brief Remove um jogador cadastrado.
+ * 
+ * Este método chama a função `removerJogador` da classe `CadastroJogadores` 
+ * para remover um jogador existente do sistema.
+ * 
+ * @param apelido O apelido do jogador a ser removido. 
+ * @return `true` se o jogador foi removido com sucesso, `false` se o jogador 
+ * não existe ou se houve algum problema na remoção.
+ */
 bool Sistema::removerJogador(const std::string& apelido) {
     return cadastro.removerJogador(apelido);
 }
 
+/**
+ * @brief Lista os jogadores cadastrados.
+ * 
+ * Este método chama a função `listarJogadores` da classe `CadastroJogadores` 
+ * para listar os jogadores cadastrados, de acordo com o critério especificado.
+ * 
+ * @param criterio O critério de ordenação para a listagem de jogadores. 
+ */
 void Sistema::listarJogadores(char criterio) {
     cadastro.listarJogadores(criterio);
 }
 
+/**
+ * @brief Executa uma partida entre dois jogadores.
+ * 
+ * Este método faz o seguinte:
+ * - Verifica se ambos os jogadores estão cadastrados.
+ * - Cria o jogo especificado (Reversi ou Lig4).
+ * - Gerencia os turnos dos jogadores, validando e executando jogadas.
+ * - Permite que os jogadores saiam no meio do jogo digitando "SAIR".
+ * - Detecta se houve uma saida de jogador e determina o vencedor.
+ * 
+ * @param jogo O tipo de jogo a ser jogado ("R" para Reversi, "L" para Lig4).
+ * @param apelido1 O apelido do jogador 1.
+ * @param apelido2 O apelido do jogador 2.
+ * @return `true` se a partida foi concluída com sucesso, `false` se houve algum 
+ * problema na execução, como jogadores não encontrados ou jogo inválido.
+ */
 bool Sistema::executarPartida(const std::string& jogo, const std::string& apelido1, const std::string& apelido2) {
     Jogador* jogador1 = cadastro.buscarJogador(apelido1);
     Jogador* jogador2 = cadastro.buscarJogador(apelido2);
@@ -66,7 +116,10 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
     }
     
     if(jogada == "SAIR"){
-        std::cout << apelidoAtual << " DESISTIU" << std::endl;   
+        std::cout << apelidoAtual << " SAIU DO JOGO" << std::endl;
+        apelidoAtual = !turnoJogador1 ? apelido1 : apelido2;
+        std::cout << " VITÓRIA "  << apelidoAtual << "!" << std::endl;
+
     }else {
         std::cout << " VITÓRIA "  << apelidoAtual << "!" << std::endl;
     }
@@ -74,12 +127,27 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
     return true;
 }
 
-
+/**
+ * @brief Imprime uma mensagem de finalição da partida.
+ */
 void Sistema::finalizarSistema() {
     std::cout << "Sistema finalizado. Obrigado por jogar!" << std::endl;
     // extra: adicionar codigo para salvar sistema
 }
 
+/**
+ * @brief Cria uma instância de um jogo especificado.
+ * 
+ * Este método verifica o tipo de jogo solicitado e cria uma instância correspondente.
+ * 
+ * - Se `jogo` for "R", uma nova instância de `Reversi` é criada e retornada.
+ * - Se `jogo` for "L", uma nova instância de `Lig4` é criada e retornada.
+ * - Se o tipo de jogo não for reconhecido, o método retorna `nullptr`.
+ * 
+ * @param jogo O tipo de jogo a ser criado ("R" para Reversi, "L" para Lig4).
+ * @return Um ponteiro para um objeto `Jogo` do tipo especificado, ou `nullptr` 
+ * se o tipo de jogo não for reconhecido.
+ */
 Jogo* Sistema::criarJogo(const std::string& jogo) {
     if (jogo == "R") {
         return new Reversi();
