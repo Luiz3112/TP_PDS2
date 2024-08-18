@@ -6,7 +6,8 @@
  *
  * Esta função inicializa o tabuleiro de Lig4 com 6 linhas e 7 colunas,
  * todas preenchidas com espaços em branco (' '). Ela também define o
- * jogador atual como 'X' e exibe o estado inicial do tabuleiro.
+ * jogador atual como 'X', dando uma breve descrição de como jogar e exibe
+ * o estado inicial do tabuleiro.
  *
  * @note Esta função deve ser chamada no início de cada nova partida.
  */
