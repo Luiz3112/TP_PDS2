@@ -40,7 +40,7 @@ int main() {
               << "(FS) FINALIZA O SISTEMA\n" << std::endl;
 
     while (true) {
-        std::cout << "Digite um comando:";
+        std::cout << "Digite um comando: ";
         std::getline(std::cin, linha);
         std::istringstream iss(linha);
         std::string comando;
@@ -90,7 +90,7 @@ int main() {
                 }
             } else {
                 // Jogar contra outro jogador
-                if (apelido2.empty()) {
+                if (apelido2.empty() || apelido1 == apelido2) {
                     std::cout << "ERRO: dados incorretos\n" << std::endl;
                 } else if (!sistema.executarPartida(jogo, apelido1, apelido2)) {
                     std::cout << "ERRO: jogador inexistente\n" << std::endl;
