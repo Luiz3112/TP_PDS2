@@ -1,0 +1,232 @@
+\begin{theindex}
+
+  \item {$\sim$Jogo}
+    \subitem {Jogo}, \hyperpage{18}
+
+  \indexspace
+
+  \item {adicionarDerrota}
+    \subitem {Jogador}, \hyperpage{15}
+  \item {adicionarVitoria}
+    \subitem {Jogador}, \hyperpage{15}
+  \item {alternarJogador}
+    \subitem {Lig4}, \hyperpage{22}
+
+  \indexspace
+
+  \item {buscarJogador}
+    \subitem {CadastroJogadores}, \hyperpage{9}
+
+  \indexspace
+
+  \item {cadastrarJogador}
+    \subitem {CadastroJogadores}, \hyperpage{10}
+    \subitem {Sistema}, \hyperpage{32}
+  \item {CadastroJogadores}, \hyperpage{9}
+    \subitem {buscarJogador}, \hyperpage{9}
+    \subitem {cadastrarJogador}, \hyperpage{10}
+    \subitem {listarJogadores}, \hyperpage{11}
+    \subitem {removerJogador}, \hyperpage{11}
+  \item {calcularJogada}
+    \subitem {IA}, \hyperpage{13}
+  \item {contarPecas}
+    \subitem {TesteReversi.cpp}, \hyperpage{54}
+
+  \indexspace
+
+  \item {DOCTEST\_CONFIG\_IMPLEMENT\_WITH\_MAIN}
+    \subitem {TesteIA.cpp}, \hyperpage{50}
+    \subitem {TesteReversi.cpp}, \hyperpage{54}
+    \subitem {TesteSistema.cpp}, \hyperpage{56}
+
+  \indexspace
+
+  \item {executar}
+    \subitem {Sistema}, \hyperpage{32}
+  \item {executarPartida}
+    \subitem {Sistema}, \hyperpage{32}
+
+  \indexspace
+
+  \item {finalizarSistema}
+    \subitem {Sistema}, \hyperpage{33}
+
+  \indexspace
+
+  \item {getAltura}
+    \subitem {Jogo}, \hyperpage{18}
+    \subitem {Lig4}, \hyperpage{22}
+    \subitem {Reversi}, \hyperpage{27}
+  \item {getApelido}
+    \subitem {Jogador}, \hyperpage{16}
+  \item {getLargura}
+    \subitem {Jogo}, \hyperpage{18}
+    \subitem {Lig4}, \hyperpage{22}
+    \subitem {Reversi}, \hyperpage{27}
+  \item {getNome}
+    \subitem {Jogador}, \hyperpage{16}
+
+  \indexspace
+
+  \item {IA}, \hyperpage{12}
+    \subitem {calcularJogada}, \hyperpage{13}
+    \subitem {IA}, \hyperpage{13}
+  \item {imprimirEstatisticas}
+    \subitem {Jogador}, \hyperpage{16}
+  \item {imprimirTabuleiro}
+    \subitem {Jogo}, \hyperpage{18}
+    \subitem {Lig4}, \hyperpage{23}
+    \subitem {Reversi}, \hyperpage{28}
+  \item {include/CadastroJogadores.hpp}, \hyperpage{37}
+  \item {include/IA.hpp}, \hyperpage{38}
+  \item {include/Jogador.hpp}, \hyperpage{39}
+  \item {include/Jogo.hpp}, \hyperpage{39}
+  \item {include/Lig4.hpp}, \hyperpage{40}
+  \item {include/Reversi.hpp}, \hyperpage{40}
+  \item {include/Sistema.hpp}, \hyperpage{41}
+  \item {iniciar}
+    \subitem {Jogo}, \hyperpage{19}
+    \subitem {Lig4}, \hyperpage{23}
+    \subitem {Reversi}, \hyperpage{28}
+
+  \indexspace
+
+  \item {Jogador}, \hyperpage{14}
+    \subitem {adicionarDerrota}, \hyperpage{15}
+    \subitem {adicionarVitoria}, \hyperpage{15}
+    \subitem {getApelido}, \hyperpage{16}
+    \subitem {getNome}, \hyperpage{16}
+    \subitem {imprimirEstatisticas}, \hyperpage{16}
+    \subitem {Jogador}, \hyperpage{14}
+  \item {jogadorAtual}
+    \subitem {Reversi}, \hyperpage{31}
+  \item {Jogo}, \hyperpage{17}
+    \subitem {$\sim$Jogo}, \hyperpage{18}
+    \subitem {getAltura}, \hyperpage{18}
+    \subitem {getLargura}, \hyperpage{18}
+    \subitem {imprimirTabuleiro}, \hyperpage{18}
+    \subitem {iniciar}, \hyperpage{19}
+    \subitem {realizarJogada}, \hyperpage{19}
+    \subitem {realizarJogadaIA}, \hyperpage{19}
+    \subitem {validarJogada}, \hyperpage{20}
+    \subitem {verificarVitoria}, \hyperpage{20}
+
+  \indexspace
+
+  \item {Lig4}, \hyperpage{21}
+    \subitem {alternarJogador}, \hyperpage{22}
+    \subitem {getAltura}, \hyperpage{22}
+    \subitem {getLargura}, \hyperpage{22}
+    \subitem {imprimirTabuleiro}, \hyperpage{23}
+    \subitem {iniciar}, \hyperpage{23}
+    \subitem {realizarJogada}, \hyperpage{23}
+    \subitem {realizarJogadaIA}, \hyperpage{24}
+    \subitem {realizarJogadaNaColuna}, \hyperpage{24}
+    \subitem {validarJogada}, \hyperpage{25}
+    \subitem {verificarVitoria}, \hyperpage{25}
+  \item {listarJogadores}
+    \subitem {CadastroJogadores}, \hyperpage{11}
+    \subitem {Sistema}, \hyperpage{33}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{46}
+    \subitem {TesteSistema.cpp}, \hyperpage{56}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{46}
+
+  \indexspace
+
+  \item {README.md}, \hyperpage{42}
+  \item {realizarJogada}
+    \subitem {Jogo}, \hyperpage{19}
+    \subitem {Lig4}, \hyperpage{23}
+    \subitem {Reversi}, \hyperpage{28}
+  \item {realizarJogadaIA}
+    \subitem {Jogo}, \hyperpage{19}
+    \subitem {Lig4}, \hyperpage{24}
+    \subitem {Reversi}, \hyperpage{29}
+  \item {realizarJogadaNaColuna}
+    \subitem {Lig4}, \hyperpage{24}
+  \item {removerJogador}
+    \subitem {CadastroJogadores}, \hyperpage{11}
+    \subitem {Sistema}, \hyperpage{34}
+  \item {Reversi}, \hyperpage{26}
+    \subitem {getAltura}, \hyperpage{27}
+    \subitem {getLargura}, \hyperpage{27}
+    \subitem {imprimirTabuleiro}, \hyperpage{28}
+    \subitem {iniciar}, \hyperpage{28}
+    \subitem {jogadorAtual}, \hyperpage{31}
+    \subitem {realizarJogada}, \hyperpage{28}
+    \subitem {realizarJogadaIA}, \hyperpage{29}
+    \subitem {tabuleiro}, \hyperpage{31}
+    \subitem {validarJogada}, \hyperpage{29}
+    \subitem {verificarVitoria}, \hyperpage{30}
+
+  \indexspace
+
+  \item {Sistema}, \hyperpage{31}
+    \subitem {cadastrarJogador}, \hyperpage{32}
+    \subitem {executar}, \hyperpage{32}
+    \subitem {executarPartida}, \hyperpage{32}
+    \subitem {finalizarSistema}, \hyperpage{33}
+    \subitem {listarJogadores}, \hyperpage{33}
+    \subitem {removerJogador}, \hyperpage{34}
+  \item {src/CadastroJogadores.cpp}, \hyperpage{42}
+  \item {src/IA.cpp}, \hyperpage{43}
+  \item {src/Jogador.cpp}, \hyperpage{44}
+  \item {src/Jogo.cpp}, \hyperpage{44}
+  \item {src/Lig4.cpp}, \hyperpage{44}
+  \item {src/main.cpp}, \hyperpage{45}
+  \item {src/Reversi.cpp}, \hyperpage{47}
+  \item {src/Sistema.cpp}, \hyperpage{47}
+
+  \indexspace
+
+  \item {tabuleiro}
+    \subitem {Reversi}, \hyperpage{31}
+  \item {TEST\_CASE}
+    \subitem {TesteCadastroJogadores.cpp}, \hyperpage{48, 49}
+    \subitem {TesteIA.cpp}, \hyperpage{50}
+    \subitem {TesteJogador.cpp}, \hyperpage{51}
+    \subitem {TesteLig4.cpp}, \hyperpage{52, 53}
+    \subitem {TesteReversi.cpp}, \hyperpage{54}
+    \subitem {TesteSistema.cpp}, \hyperpage{56}
+  \item {TesteCadastroJogadores.cpp}
+    \subitem {TEST\_CASE}, \hyperpage{48, 49}
+  \item {TesteIA.cpp}
+    \subitem {DOCTEST\_CONFIG\_IMPLEMENT\_WITH\_MAIN}, \hyperpage{50}
+    \subitem {TEST\_CASE}, \hyperpage{50}
+  \item {TesteJogador.cpp}
+    \subitem {TEST\_CASE}, \hyperpage{51}
+  \item {TesteLig4.cpp}
+    \subitem {TEST\_CASE}, \hyperpage{52, 53}
+  \item {TesteReversi.cpp}
+    \subitem {contarPecas}, \hyperpage{54}
+    \subitem {DOCTEST\_CONFIG\_IMPLEMENT\_WITH\_MAIN}, \hyperpage{54}
+    \subitem {TEST\_CASE}, \hyperpage{54}
+  \item {TesteSistema.cpp}
+    \subitem {DOCTEST\_CONFIG\_IMPLEMENT\_WITH\_MAIN}, \hyperpage{56}
+    \subitem {main}, \hyperpage{56}
+    \subitem {TEST\_CASE}, \hyperpage{56}
+  \item {tests/TesteCadastroJogadores.cpp}, \hyperpage{48}
+  \item {tests/TesteIA.cpp}, \hyperpage{49}
+  \item {tests/TesteJogador.cpp}, \hyperpage{50}
+  \item {tests/TesteJogo.cpp}, \hyperpage{51}
+  \item {tests/TesteLig4.cpp}, \hyperpage{52}
+  \item {tests/TesteReversi.cpp}, \hyperpage{53}
+  \item {tests/TesteSistema.cpp}, \hyperpage{55}
+
+  \indexspace
+
+  \item {validarJogada}
+    \subitem {Jogo}, \hyperpage{20}
+    \subitem {Lig4}, \hyperpage{25}
+    \subitem {Reversi}, \hyperpage{29}
+  \item {verificarVitoria}
+    \subitem {Jogo}, \hyperpage{20}
+    \subitem {Lig4}, \hyperpage{25}
+    \subitem {Reversi}, \hyperpage{30}
+
+\end{theindex}

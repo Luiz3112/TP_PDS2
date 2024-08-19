@@ -1,0 +1,5 @@
+<map id="Jogo" name="Jogo">
+<area shape="rect" id="node1" title="Classe base abstrata para jogos." alt="" coords="46,5,97,32"/>
+<area shape="rect" id="node2" href="$classLig4.html" title="Classe responsável pelo gerenciamento do jogo Lig4, derivada da classe Jogo." alt="" coords="5,80,55,107"/>
+<area shape="rect" id="node3" href="$classReversi.html" title="Classe responsável pelo gerenciamento do jogo Reverse, derivada da classe Jogo." alt="" coords="79,80,149,107"/>
+</map>

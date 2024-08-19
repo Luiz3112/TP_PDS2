@@ -1,0 +1,186 @@
+\hypertarget{classSistema}{}\doxysection{Sistema Class Reference}
+\label{classSistema}\index{Sistema@{Sistema}}
+
+
+Gerencia o sistema de jogos e cadastro de jogadores.  
+
+
+
+
+{\ttfamily \#include $<$Sistema.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSistema_afe1ca030dbf34509f01afbfb02b1749f}{executar}} ()
+\begin{DoxyCompactList}\small\item\em Executa o loop principal do sistema. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSistema_ad25039b12cf0570b072567e2533bd73c}{cadastrar\+Jogador}} (const std\+::string \&apelido, const std\+::string \&nome)
+\begin{DoxyCompactList}\small\item\em Cadastra um novo jogador. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSistema_afea873e0fa074f0bbb215d391a28615c}{remover\+Jogador}} (const std\+::string \&apelido)
+\begin{DoxyCompactList}\small\item\em Remove um jogador cadastrado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSistema_a5a03633c7c69d80e39ebd477f45b36d4}{listar\+Jogadores}} (char criterio)
+\begin{DoxyCompactList}\small\item\em Lista os jogadores cadastrados. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSistema_a794d8e2236559089f6a9aded53e766bf}{executar\+Partida}} (const std\+::string \&jogo, const std\+::string \&apelido1, const std\+::string \&apelido2)
+\begin{DoxyCompactList}\small\item\em Executa uma partida entre dois jogadores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSistema_a10517b24defe76090bad2e5272fa58ac}{finalizar\+Sistema}} ()
+\begin{DoxyCompactList}\small\item\em Imprime uma mensagem de finalição da partida. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Gerencia o sistema de jogos e cadastro de jogadores. 
+
+A classe \mbox{\hyperlink{classSistema}{Sistema}} é responsável por gerenciar todas as operações do sistema, incluindo o gerenciamento de jogos (iniciar e executar partidas), bem como o cadastro, remoção e listagem de jogadores. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSistema_ad25039b12cf0570b072567e2533bd73c}\label{classSistema_ad25039b12cf0570b072567e2533bd73c}} 
+\index{Sistema@{Sistema}!cadastrarJogador@{cadastrarJogador}}
+\index{cadastrarJogador@{cadastrarJogador}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{cadastrarJogador()}{cadastrarJogador()}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+Jogador (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{apelido,  }\item[{const std\+::string \&}]{nome }\end{DoxyParamCaption})}
+
+
+
+Cadastra um novo jogador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido do jogador a ser cadastrado. \\
+\hline
+{\em nome} & O nome do jogador a ser cadastrado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} se o jogador foi cadastrado com sucesso, \textquotesingle{}false\textquotesingle{} se o jogador já existe ou se houve algum problema no cadastro.
+\end{DoxyReturn}
+Este método chama a função {\ttfamily cadastrar\+Jogador} da classe {\ttfamily \mbox{\hyperlink{classCadastroJogadores}{Cadastro\+Jogadores}}} para registrar um novo jogador no sistema.
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido do jogador a ser cadastrado. \\
+\hline
+{\em nome} & O nome do jogador a ser cadastrado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} se o jogador foi cadastrado com sucesso, \textquotesingle{}false\textquotesingle{} se o jogador já existe ou se houve algum problema no cadastro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSistema_afe1ca030dbf34509f01afbfb02b1749f}\label{classSistema_afe1ca030dbf34509f01afbfb02b1749f}} 
+\index{Sistema@{Sistema}!executar@{executar}}
+\index{executar@{executar}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{executar()}{executar()}}
+{\footnotesize\ttfamily void Sistema\+::executar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Executa o loop principal do sistema. 
+
+A implementação do loop principal está localizada no \mbox{\hyperlink{main_8cpp}{main.\+cpp}}. \mbox{\Hypertarget{classSistema_a794d8e2236559089f6a9aded53e766bf}\label{classSistema_a794d8e2236559089f6a9aded53e766bf}} 
+\index{Sistema@{Sistema}!executarPartida@{executarPartida}}
+\index{executarPartida@{executarPartida}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{executarPartida()}{executarPartida()}}
+{\footnotesize\ttfamily bool Sistema\+::executar\+Partida (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{jogo,  }\item[{const std\+::string \&}]{apelido1,  }\item[{const std\+::string \&}]{apelido2 }\end{DoxyParamCaption})}
+
+
+
+Executa uma partida entre dois jogadores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & Qual o tipo de jogo será jogado \\
+\hline
+{\em apelido1} & Apelido do jogador 1. \\
+\hline
+{\em apelido2} & Apelido do jogador 2. Se definido como \char`\"{}\+I\+A\char`\"{}, o jogador 1 jogará contra o computador. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} quando a partida foi executada com sucesso, \textquotesingle{}false\textquotesingle{} se houve algum problema na execução.
+\end{DoxyReturn}
+Este método faz o seguinte\+:
+\begin{DoxyItemize}
+\item Verifica se ambos os jogadores estão cadastrados.
+\item Cria o jogo especificado (\mbox{\hyperlink{classReversi}{Reversi}} ou \mbox{\hyperlink{classLig4}{Lig4}}).
+\item Gerencia os turnos dos jogadores, validando e executando jogadas.
+\item Permite que os jogadores saiam no meio do jogo digitando \char`\"{}\+S\+A\+I\+R\char`\"{}.
+\item Detecta se houve uma saida de jogador e determina o vencedor.
+\item Adiciona vitria e derrota nas estatísticas dos jogares.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & O tipo de jogo a ser jogado (\char`\"{}\+R\char`\"{} para \mbox{\hyperlink{classReversi}{Reversi}}, \char`\"{}\+L\char`\"{} para \mbox{\hyperlink{classLig4}{Lig4}}). \\
+\hline
+{\em apelido1} & O apelido do jogador 1. \\
+\hline
+{\em apelido2} & O apelido do jogador 2. Caso seja definido como \char`\"{}\+I\+A\char`\"{}, o jogador 1 joga contra o computador. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} se a partida foi concluída com sucesso, {\ttfamily false} se houve algum problema na execução, como jogadores não encontrados ou jogo inválido. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSistema_a10517b24defe76090bad2e5272fa58ac}\label{classSistema_a10517b24defe76090bad2e5272fa58ac}} 
+\index{Sistema@{Sistema}!finalizarSistema@{finalizarSistema}}
+\index{finalizarSistema@{finalizarSistema}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{finalizarSistema()}{finalizarSistema()}}
+{\footnotesize\ttfamily void Sistema\+::finalizar\+Sistema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Imprime uma mensagem de finalição da partida. 
+
+\mbox{\Hypertarget{classSistema_a5a03633c7c69d80e39ebd477f45b36d4}\label{classSistema_a5a03633c7c69d80e39ebd477f45b36d4}} 
+\index{Sistema@{Sistema}!listarJogadores@{listarJogadores}}
+\index{listarJogadores@{listarJogadores}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{listarJogadores()}{listarJogadores()}}
+{\footnotesize\ttfamily void Sistema\+::listar\+Jogadores (\begin{DoxyParamCaption}\item[{char}]{criterio }\end{DoxyParamCaption})}
+
+
+
+Lista os jogadores cadastrados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em criterio} & O critério de ordenação para a listagem de jogadores e suas informações.\\
+\hline
+\end{DoxyParams}
+Este método chama a função {\ttfamily listar\+Jogadores} da classe {\ttfamily \mbox{\hyperlink{classCadastroJogadores}{Cadastro\+Jogadores}}} para listar os jogadores cadastrados, de acordo com o critério especificado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em criterio} & O critério de ordenação para a listagem de jogadores. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSistema_afea873e0fa074f0bbb215d391a28615c}\label{classSistema_afea873e0fa074f0bbb215d391a28615c}} 
+\index{Sistema@{Sistema}!removerJogador@{removerJogador}}
+\index{removerJogador@{removerJogador}!Sistema@{Sistema}}
+\doxysubsubsection{\texorpdfstring{removerJogador()}{removerJogador()}}
+{\footnotesize\ttfamily bool Sistema\+::remover\+Jogador (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{apelido }\end{DoxyParamCaption})}
+
+
+
+Remove um jogador cadastrado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido do jogador a ser removido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} se o jogador foi removido com sucesso, {\ttfamily false} se o jogador não existe ou se houve algum problema na remoção.
+\end{DoxyReturn}
+Este método chama a função {\ttfamily remover\+Jogador} da classe {\ttfamily \mbox{\hyperlink{classCadastroJogadores}{Cadastro\+Jogadores}}} para remover um jogador existente do sistema.
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido do jogador a ser removido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} se o jogador foi removido com sucesso, {\ttfamily false} se o jogador não existe ou se houve algum problema na remoção. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Sistema_8hpp}{Sistema.\+hpp}}\item 
+src/\mbox{\hyperlink{Sistema_8cpp}{Sistema.\+cpp}}\end{DoxyCompactItemize}

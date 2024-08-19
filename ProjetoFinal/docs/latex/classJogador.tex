@@ -1,0 +1,161 @@
+\hypertarget{classJogador}{}\doxysection{Jogador Class Reference}
+\label{classJogador}\index{Jogador@{Jogador}}
+
+
+Armazenar informações do jogador.  
+
+
+
+
+{\ttfamily \#include $<$Jogador.\+hpp$>$}
+
+
+
+Inheritance diagram for Jogador\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{classJogador__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJogador_a11932150131afc0c73286dc27c1c198c}{Jogador}} (const std\+::string \&apelido, const std\+::string \&nome)
+\begin{DoxyCompactList}\small\item\em Cria um jogador. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classJogador_aab1dd73438da8f07e1b9b8b9df0a5eb4}{get\+Apelido}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o apelido do jogador. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classJogador_a56f68b57e7fb229f932ef60d2116833c}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o nome do jogador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_a969019edab14144573d51c9bb3d3e2a4}{adicionar\+Vitoria}} (const std\+::string \&jogo)
+\begin{DoxyCompactList}\small\item\em Adiciona uma vitoria ao jogo jogado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_a9eeba7c59cb344db3146bc0b29c93944}{adicionar\+Derrota}} (const std\+::string \&jogo)
+\begin{DoxyCompactList}\small\item\em Adiciona uma derrota ao jogo jogado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_a3d9940a00f06d7f215c4f913f3720f73}{imprimir\+Estatisticas}} () const
+\begin{DoxyCompactList}\small\item\em Imprime todas as estatisticas de vitoria e derrota. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Armazenar informações do jogador. 
+
+A classe \mbox{\hyperlink{classJogador}{Jogador}} armazena o Apelido, Nome, numero de Vitorias e Derrotas do jogador em cada jogo. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classJogador_a11932150131afc0c73286dc27c1c198c}\label{classJogador_a11932150131afc0c73286dc27c1c198c}} 
+\index{Jogador@{Jogador}!Jogador@{Jogador}}
+\index{Jogador@{Jogador}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{Jogador()}{Jogador()}}
+{\footnotesize\ttfamily Jogador\+::\+Jogador (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{apelido,  }\item[{const std\+::string \&}]{nome }\end{DoxyParamCaption})}
+
+
+
+Cria um jogador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido atribuido ao jogador criado. \\
+\hline
+{\em nome} & O nome atribuido ao jogador criado.\\
+\hline
+\end{DoxyParams}
+Cria um jogador e inicia parametros de vitória e derrota com valor zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido atribuido ao jogador criado. \\
+\hline
+{\em nome} & O nome atribuido ao jogador criado. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJogador_a9eeba7c59cb344db3146bc0b29c93944}\label{classJogador_a9eeba7c59cb344db3146bc0b29c93944}} 
+\index{Jogador@{Jogador}!adicionarDerrota@{adicionarDerrota}}
+\index{adicionarDerrota@{adicionarDerrota}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{adicionarDerrota()}{adicionarDerrota()}}
+{\footnotesize\ttfamily void Jogador\+::adicionar\+Derrota (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{jogo }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma derrota ao jogo jogado. 
+
+Adiciona uma derrota ao jogador no jogo jogado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & Defini qual jogo foi jogado.\\
+\hline
+\end{DoxyParams}
+Analisa o valor do parametro \char`\"{}jogo\char`\"{} para adicionar a derrota ao tipo de jogo jogado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & Defini qual tipo de jogo foi a derrota. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJogador_a969019edab14144573d51c9bb3d3e2a4}\label{classJogador_a969019edab14144573d51c9bb3d3e2a4}} 
+\index{Jogador@{Jogador}!adicionarVitoria@{adicionarVitoria}}
+\index{adicionarVitoria@{adicionarVitoria}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{adicionarVitoria()}{adicionarVitoria()}}
+{\footnotesize\ttfamily void Jogador\+::adicionar\+Vitoria (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{jogo }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma vitoria ao jogo jogado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & Defini qual jogo foi jogado.\\
+\hline
+\end{DoxyParams}
+Analisa o valor do parametro \char`\"{}jogo\char`\"{} para adicionar a vitoria ao tipo de jogo jogado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & Defini qual tipo de jogo foi a vitória. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJogador_aab1dd73438da8f07e1b9b8b9df0a5eb4}\label{classJogador_aab1dd73438da8f07e1b9b8b9df0a5eb4}} 
+\index{Jogador@{Jogador}!getApelido@{getApelido}}
+\index{getApelido@{getApelido}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{getApelido()}{getApelido()}}
+{\footnotesize\ttfamily std\+::string Jogador\+::get\+Apelido (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o apelido do jogador. 
+
+\begin{DoxyReturn}{Returns}
+Retorna o apelido do jogador. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJogador_a56f68b57e7fb229f932ef60d2116833c}\label{classJogador_a56f68b57e7fb229f932ef60d2116833c}} 
+\index{Jogador@{Jogador}!getNome@{getNome}}
+\index{getNome@{getNome}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily std\+::string Jogador\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o nome do jogador. 
+
+\begin{DoxyReturn}{Returns}
+Retorna o nome do jogador. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJogador_a3d9940a00f06d7f215c4f913f3720f73}\label{classJogador_a3d9940a00f06d7f215c4f913f3720f73}} 
+\index{Jogador@{Jogador}!imprimirEstatisticas@{imprimirEstatisticas}}
+\index{imprimirEstatisticas@{imprimirEstatisticas}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{imprimirEstatisticas()}{imprimirEstatisticas()}}
+{\footnotesize\ttfamily void Jogador\+::imprimir\+Estatisticas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprime todas as estatisticas de vitoria e derrota. 
+
+Serpara as estatísticas de vitoria e derrota de acordo com o tipo de jogo. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Jogador_8hpp}{Jogador.\+hpp}}\item 
+src/\mbox{\hyperlink{Jogador_8cpp}{Jogador.\+cpp}}\end{DoxyCompactItemize}

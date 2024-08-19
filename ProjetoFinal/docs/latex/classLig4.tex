@@ -1,0 +1,277 @@
+\hypertarget{classLig4}{}\doxysection{Lig4 Class Reference}
+\label{classLig4}\index{Lig4@{Lig4}}
+
+
+Classe responsável pelo gerenciamento do jogo \mbox{\hyperlink{classLig4}{Lig4}}, derivada da classe \mbox{\hyperlink{classJogo}{Jogo}}.  
+
+
+
+
+{\ttfamily \#include $<$Lig4.\+hpp$>$}
+
+
+
+Inheritance diagram for Lig4\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=118pt]{classLig4__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Lig4\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=118pt]{classLig4__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classLig4_a30a104865206bb5bc0fbbf14155db207}{iniciar}} () override
+\begin{DoxyCompactList}\small\item\em Inicia um novo jogo de \mbox{\hyperlink{classLig4}{Lig4}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLig4_a495d8fb3850edaaf29d70eb511d134fb}{imprimir\+Tabuleiro}} () override
+\begin{DoxyCompactList}\small\item\em Imprime o estado atual do tabuleiro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLig4_a889be75c8f741a30209f7f1269dae465}{validar\+Jogada}} (int linha, int coluna) override
+\begin{DoxyCompactList}\small\item\em Valida se a posicao da jogada é possivel. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLig4_a7d88164fb1a147040417191705e5e0fc}{verificar\+Vitoria}} () override
+\begin{DoxyCompactList}\small\item\em Verica se houve vitória. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLig4_a0480e6110172715ee6c484e84b357e63}{realizar\+Jogada}} (int linha, int coluna) override
+\begin{DoxyCompactList}\small\item\em Realiza a jogada no tabuleiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLig4_ac522749fa36447cc8d4ab4796def3176}{realizar\+Jogada\+IA}} () override
+\begin{DoxyCompactList}\small\item\em Realiza a jogada da \mbox{\hyperlink{classIA}{IA}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLig4_ad41322530b0cf6ad3b13da51f5818fcd}{get\+Altura}} () const override
+\begin{DoxyCompactList}\small\item\em Retorna o número de linhas (altura) do tabuleiro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLig4_ac54682dc8228869dc3bdc15b527fc9df}{get\+Largura}} () const override
+\begin{DoxyCompactList}\small\item\em Retorna o número de colunas (largura) do tabuleiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLig4_a027adf13666708d6da7d64e4069ac15f}{alternar\+Jogador}} ()
+\begin{DoxyCompactList}\small\item\em Alterna o jogador que vai jogar. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLig4_a5aa7bb88acb85a843032da85abde771d}{realizar\+Jogada\+Na\+Coluna}} (int coluna)
+\begin{DoxyCompactList}\small\item\em Realiza uma jogada na coluna especificada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe responsável pelo gerenciamento do jogo \mbox{\hyperlink{classLig4}{Lig4}}, derivada da classe \mbox{\hyperlink{classJogo}{Jogo}}. 
+
+A classe \mbox{\hyperlink{classLig4}{Lig4}} gerencia o estado e as regras do jogo \mbox{\hyperlink{classLig4}{Lig4}}. Ela herda todos os métodos da classe \mbox{\hyperlink{classJogo}{Jogo}} e implementa funcionalidades específicas para o jogo \mbox{\hyperlink{classLig4}{Lig4}}, como a alternância de jogadores, validação de jogadas, realização de jogadas e verificação de vitória. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLig4_a027adf13666708d6da7d64e4069ac15f}\label{classLig4_a027adf13666708d6da7d64e4069ac15f}} 
+\index{Lig4@{Lig4}!alternarJogador@{alternarJogador}}
+\index{alternarJogador@{alternarJogador}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{alternarJogador()}{alternarJogador()}}
+{\footnotesize\ttfamily void Lig4\+::alternar\+Jogador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Alterna o jogador que vai jogar. 
+
+Alterna o jogador atual.
+
+Este método troca o jogador atual, alternando entre \textquotesingle{}X\textquotesingle{} e \textquotesingle{}O\textquotesingle{}. Se o jogador atual for \textquotesingle{}X\textquotesingle{}, ele será alterado para \textquotesingle{}O\textquotesingle{}. Caso contrário, será alterado para \textquotesingle{}X\textquotesingle{}. \mbox{\Hypertarget{classLig4_ad41322530b0cf6ad3b13da51f5818fcd}\label{classLig4_ad41322530b0cf6ad3b13da51f5818fcd}} 
+\index{Lig4@{Lig4}!getAltura@{getAltura}}
+\index{getAltura@{getAltura}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{getAltura()}{getAltura()}}
+{\footnotesize\ttfamily int Lig4\+::get\+Altura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retorna o número de linhas (altura) do tabuleiro. 
+
+\begin{DoxyReturn}{Returns}
+Número de linhas do tabuleiro. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogo_a63f83c33654a10175c16da83e6e1e8fc}{Jogo}}.
+
+\mbox{\Hypertarget{classLig4_ac54682dc8228869dc3bdc15b527fc9df}\label{classLig4_ac54682dc8228869dc3bdc15b527fc9df}} 
+\index{Lig4@{Lig4}!getLargura@{getLargura}}
+\index{getLargura@{getLargura}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{getLargura()}{getLargura()}}
+{\footnotesize\ttfamily int Lig4\+::get\+Largura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retorna o número de colunas (largura) do tabuleiro. 
+
+\begin{DoxyReturn}{Returns}
+Número de colunas do tabuleiro. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogo_abe0185d7242d25b39cc3f105dae95313}{Jogo}}.
+
+\mbox{\Hypertarget{classLig4_a495d8fb3850edaaf29d70eb511d134fb}\label{classLig4_a495d8fb3850edaaf29d70eb511d134fb}} 
+\index{Lig4@{Lig4}!imprimirTabuleiro@{imprimirTabuleiro}}
+\index{imprimirTabuleiro@{imprimirTabuleiro}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{imprimirTabuleiro()}{imprimirTabuleiro()}}
+{\footnotesize\ttfamily void Lig4\+::imprimir\+Tabuleiro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Imprime o estado atual do tabuleiro. 
+
+Este método percorre o tabuleiro e imprime cada célula, formatando o tabuleiro para que cada linha seja representada por uma linha de caracteres no console. Cada célula é delimitada por um pipe (\textquotesingle{}$\vert$\textquotesingle{}). No final, as colunas do tabuleiro são numeradas de 0 a 6. 
+
+Implements \mbox{\hyperlink{classJogo_a227dc442e308a7509c870ba80e7f8934}{Jogo}}.
+
+\mbox{\Hypertarget{classLig4_a30a104865206bb5bc0fbbf14155db207}\label{classLig4_a30a104865206bb5bc0fbbf14155db207}} 
+\index{Lig4@{Lig4}!iniciar@{iniciar}}
+\index{iniciar@{iniciar}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{iniciar()}{iniciar()}}
+{\footnotesize\ttfamily void Lig4\+::iniciar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Inicia um novo jogo de \mbox{\hyperlink{classLig4}{Lig4}}. 
+
+Esta metodo chama a função criar\+Tabuleiro para inicializa-\/lo. Ela também define o jogador atual como \textquotesingle{}X\textquotesingle{}, dando uma breve descrição de como jogar e exibe o estado inicial do tabuleiro.
+
+\begin{DoxyNote}{Note}
+Esta função deve ser chamada no início de cada nova partida. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classJogo_aec1fcd5c1468768ddb96a1eed4bddfbf}{Jogo}}.
+
+\mbox{\Hypertarget{classLig4_a0480e6110172715ee6c484e84b357e63}\label{classLig4_a0480e6110172715ee6c484e84b357e63}} 
+\index{Lig4@{Lig4}!realizarJogada@{realizarJogada}}
+\index{realizarJogada@{realizarJogada}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{realizarJogada()}{realizarJogada()}}
+{\footnotesize\ttfamily void Lig4\+::realizar\+Jogada (\begin{DoxyParamCaption}\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Realiza a jogada no tabuleiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & A linha onde a jogada será realizada. \\
+\hline
+{\em coluna} & A coluna onde a jogada será realizada.\\
+\hline
+\end{DoxyParams}
+Este método verifica se a jogada na coluna especificada é válida. Se for válida, a jogada é realizada naquela coluna, o jogador atual é alternado, e o estado atualizado do tabuleiro é impresso. Caso a jogada seja inválida, uma mensagem de erro é exibida.
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & A linha onde a jogada seria realizada (não utilizada diretamente, pois a jogada ocorre na coluna mais baixa disponível). \\
+\hline
+{\em coluna} & A coluna onde a jogada será realizada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classJogo_a6d39f30f8fda70bd82c8012a827f19c0}{Jogo}}.
+
+\mbox{\Hypertarget{classLig4_ac522749fa36447cc8d4ab4796def3176}\label{classLig4_ac522749fa36447cc8d4ab4796def3176}} 
+\index{Lig4@{Lig4}!realizarJogadaIA@{realizarJogadaIA}}
+\index{realizarJogadaIA@{realizarJogadaIA}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{realizarJogadaIA()}{realizarJogadaIA()}}
+{\footnotesize\ttfamily void Lig4\+::realizar\+Jogada\+IA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Realiza a jogada da \mbox{\hyperlink{classIA}{IA}}. 
+
+Realiza uma jogada automática pela \mbox{\hyperlink{classIA}{IA}}.
+
+Este método é responsável por decidir e realizar uma jogada automática pela \mbox{\hyperlink{classIA}{IA}}.
+
+A \mbox{\hyperlink{classIA}{IA}} escolhe uma jogada com base na configuração atual do tabuleiro e realiza a jogada. 
+
+Implements \mbox{\hyperlink{classJogo_a554702eb069af53759ebb9303b4fb431}{Jogo}}.
+
+\mbox{\Hypertarget{classLig4_a5aa7bb88acb85a843032da85abde771d}\label{classLig4_a5aa7bb88acb85a843032da85abde771d}} 
+\index{Lig4@{Lig4}!realizarJogadaNaColuna@{realizarJogadaNaColuna}}
+\index{realizarJogadaNaColuna@{realizarJogadaNaColuna}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{realizarJogadaNaColuna()}{realizarJogadaNaColuna()}}
+{\footnotesize\ttfamily void Lig4\+::realizar\+Jogada\+Na\+Coluna (\begin{DoxyParamCaption}\item[{int}]{coluna }\end{DoxyParamCaption})}
+
+
+
+Realiza uma jogada na coluna especificada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coluna} & A coluna onde a jogada será realizada.\\
+\hline
+\end{DoxyParams}
+Este método insere a peça do jogador atual na primeira posição disponível (de baixo para cima) na coluna especificada. A jogada é realizada preenchendo a primeira célula vazia encontrada na coluna.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coluna} & A coluna onde a jogada será realizada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLig4_a889be75c8f741a30209f7f1269dae465}\label{classLig4_a889be75c8f741a30209f7f1269dae465}} 
+\index{Lig4@{Lig4}!validarJogada@{validarJogada}}
+\index{validarJogada@{validarJogada}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{validarJogada()}{validarJogada()}}
+{\footnotesize\ttfamily bool Lig4\+::validar\+Jogada (\begin{DoxyParamCaption}\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Valida se a posicao da jogada é possivel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & A linha onde a jogada será realizada. \\
+\hline
+{\em coluna} & A coluna onde a jogada será realizada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} se a jogada for válida, {\ttfamily false} caso contrário.
+\end{DoxyReturn}
+A funcao joda\+Valida retorna \textquotesingle{}true\textquotesingle{} e \textquotesingle{}false\textquotesingle{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & A linha onde a jogada será realizada. \\
+\hline
+{\em coluna} & A coluna onde a jogada será realizada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} se a jogada for válida, {\ttfamily false} caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogo_a4924bccbeab84b79a62cac68f85e0c7a}{Jogo}}.
+
+\mbox{\Hypertarget{classLig4_a7d88164fb1a147040417191705e5e0fc}\label{classLig4_a7d88164fb1a147040417191705e5e0fc}} 
+\index{Lig4@{Lig4}!verificarVitoria@{verificarVitoria}}
+\index{verificarVitoria@{verificarVitoria}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{verificarVitoria()}{verificarVitoria()}}
+{\footnotesize\ttfamily bool Lig4\+::verificar\+Vitoria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Verica se houve vitória. 
+
+Verifica se houve vitória no jogo.
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} se houve vitória,\textquotesingle{}false\textquotesingle{} caso contrário.
+\end{DoxyReturn}
+Este método percorre todo o tabuleiro de \mbox{\hyperlink{classLig4}{Lig4}}. Para cada célula que não está vazia, ele verifica se há uma sequência de quatro peças consecutivas em qualquer uma das direções possíveis (horizontal, vertical, diagonal para cima, ou diagonal para baixo). Se for encontrada uma sequência vencedora, a função retorna \textquotesingle{}true\textquotesingle{}.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} se houve vitória, {\ttfamily false} caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogo_a75bd4ef99ce26b6c3a903b1d4ee3daf5}{Jogo}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Lig4_8hpp}{Lig4.\+hpp}}\item 
+src/\mbox{\hyperlink{Lig4_8cpp}{Lig4.\+cpp}}\end{DoxyCompactItemize}

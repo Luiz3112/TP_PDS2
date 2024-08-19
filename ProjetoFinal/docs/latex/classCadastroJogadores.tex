@@ -1,0 +1,154 @@
+\hypertarget{classCadastroJogadores}{}\doxysection{Cadastro\+Jogadores Class Reference}
+\label{classCadastroJogadores}\index{CadastroJogadores@{CadastroJogadores}}
+
+
+Classe responsável pelo gerenciamento de jogadores.  
+
+
+
+
+{\ttfamily \#include $<$Cadastro\+Jogadores.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classCadastroJogadores_aa97df4ceb1d1e87a7b4ad68a8fffd882}{cadastrar\+Jogador}} (const std\+::string \&apelido, const std\+::string \&nome)
+\begin{DoxyCompactList}\small\item\em Cadastra um novo jogador. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCadastroJogadores_a5d73adcfaf572fa7b175e0cdf9197bac}{remover\+Jogador}} (const std\+::string \&apelido)
+\begin{DoxyCompactList}\small\item\em Remove um jogador do cadastro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classJogador}{Jogador}} $\ast$ \mbox{\hyperlink{classCadastroJogadores_a4de45257076b799da2e5407236e6936a}{buscar\+Jogador}} (const std\+::string \&apelido)
+\begin{DoxyCompactList}\small\item\em Busca um jogador pelo apelido. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCadastroJogadores_a3c324c035c255e9305e2af1a9868c4a9}{listar\+Jogadores}} (char criterio) const
+\begin{DoxyCompactList}\small\item\em Lista todos os jogadores cadastrados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe responsável pelo gerenciamento de jogadores. 
+
+A classe \mbox{\hyperlink{classCadastroJogadores}{Cadastro\+Jogadores}} permite o cadastro, remoção, busca e listagem de jogadores. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCadastroJogadores_a4de45257076b799da2e5407236e6936a}\label{classCadastroJogadores_a4de45257076b799da2e5407236e6936a}} 
+\index{CadastroJogadores@{CadastroJogadores}!buscarJogador@{buscarJogador}}
+\index{buscarJogador@{buscarJogador}!CadastroJogadores@{CadastroJogadores}}
+\doxysubsubsection{\texorpdfstring{buscarJogador()}{buscarJogador()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classJogador}{Jogador}} $\ast$ Cadastro\+Jogadores\+::buscar\+Jogador (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{apelido }\end{DoxyParamCaption})}
+
+
+
+Busca um jogador pelo apelido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido do jogador a ser buscado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Jogador$\ast$ Ponteiro para o jogador encontrado ou nullptr se não for encontrado.
+\end{DoxyReturn}
+Procura um jogador com o apelido fornecido e retorna um ponteiro para ele.
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido do jogador a ser buscado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Jogador$\ast$ Ponteiro para o jogador encontrado ou nullptr se não for encontrado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCadastroJogadores_aa97df4ceb1d1e87a7b4ad68a8fffd882}\label{classCadastroJogadores_aa97df4ceb1d1e87a7b4ad68a8fffd882}} 
+\index{CadastroJogadores@{CadastroJogadores}!cadastrarJogador@{cadastrarJogador}}
+\index{cadastrarJogador@{cadastrarJogador}!CadastroJogadores@{CadastroJogadores}}
+\doxysubsubsection{\texorpdfstring{cadastrarJogador()}{cadastrarJogador()}}
+{\footnotesize\ttfamily bool Cadastro\+Jogadores\+::cadastrar\+Jogador (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{apelido,  }\item[{const std\+::string \&}]{nome }\end{DoxyParamCaption})}
+
+
+
+Cadastra um novo jogador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido do jogador a ser cadastrado. \\
+\hline
+{\em nome} & O nome do jogador a ser cadastrado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se o jogador foi cadastrado com sucesso. 
+
+false Se o jogador já existe ou se houve algum problema no cadastro.
+\end{DoxyReturn}
+Verifica se o jogador com o apelido fornecido já existe no cadastro. Se não existir, adiciona o jogador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido do jogador a ser cadastrado. \\
+\hline
+{\em nome} & O nome do jogador a ser cadastrado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se o jogador foi cadastrado com sucesso. 
+
+false Se o jogador já existe no cadastro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCadastroJogadores_a3c324c035c255e9305e2af1a9868c4a9}\label{classCadastroJogadores_a3c324c035c255e9305e2af1a9868c4a9}} 
+\index{CadastroJogadores@{CadastroJogadores}!listarJogadores@{listarJogadores}}
+\index{listarJogadores@{listarJogadores}!CadastroJogadores@{CadastroJogadores}}
+\doxysubsubsection{\texorpdfstring{listarJogadores()}{listarJogadores()}}
+{\footnotesize\ttfamily void Cadastro\+Jogadores\+::listar\+Jogadores (\begin{DoxyParamCaption}\item[{char}]{criterio }\end{DoxyParamCaption}) const}
+
+
+
+Lista todos os jogadores cadastrados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em criterio} & Critério de ordenação (\textquotesingle{}a\textquotesingle{} para apelido, \textquotesingle{}n\textquotesingle{} para nome).\\
+\hline
+\end{DoxyParams}
+Ordena os jogadores com base no critério fornecido e imprime as estatísticas de cada jogador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em criterio} & Critério de ordenação (\textquotesingle{}A\textquotesingle{} para ordenar por apelido, \textquotesingle{}N\textquotesingle{} para ordenar por nome). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCadastroJogadores_a5d73adcfaf572fa7b175e0cdf9197bac}\label{classCadastroJogadores_a5d73adcfaf572fa7b175e0cdf9197bac}} 
+\index{CadastroJogadores@{CadastroJogadores}!removerJogador@{removerJogador}}
+\index{removerJogador@{removerJogador}!CadastroJogadores@{CadastroJogadores}}
+\doxysubsubsection{\texorpdfstring{removerJogador()}{removerJogador()}}
+{\footnotesize\ttfamily bool Cadastro\+Jogadores\+::remover\+Jogador (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{apelido }\end{DoxyParamCaption})}
+
+
+
+Remove um jogador do cadastro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido do jogador a ser removido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se o jogador foi removido com sucesso. 
+
+false Se o jogador não foi encontrado no cadastro.
+\end{DoxyReturn}
+Procura um jogador com o apelido fornecido e o remove do cadastro.
+
+
+\begin{DoxyParams}{Parameters}
+{\em apelido} & O apelido do jogador a ser removido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se o jogador foi removido com sucesso. 
+
+false Se o jogador não foi encontrado no cadastro. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{CadastroJogadores_8hpp}{Cadastro\+Jogadores.\+hpp}}\item 
+src/\mbox{\hyperlink{CadastroJogadores_8cpp}{Cadastro\+Jogadores.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+\hypertarget{main_8cpp}{}\doxysection{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+
+
+Ponto de entrada para o sistema de gerenciamento de jogos.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include \char`\"{}Sistema.\+hpp\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Função principal do programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ponto de entrada para o sistema de gerenciamento de jogos. 
+
+Este arquivo contém o ponto de entrada principal para o sistema. Ele permite que o usuário interaja com o sistema por meio de comandos para cadastrar jogadores, remover jogadores, listar jogadores, e iniciar jogos de \mbox{\hyperlink{classReversi}{Reversi}} ou \mbox{\hyperlink{classLig4}{Lig4}}. O programa continua executando até que o comando \char`\"{}\+F\+S\char`\"{} seja digitado, momento em que o sistema é finalizado. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função principal do programa. 
+
+Esta função é o ponto de entrada do programa e fornece uma interface de linha de comando para o usuário interagir com o sistema. Os comandos aceitos são\+:
+\begin{DoxyItemize}
+\item CJ \textquotesingle{}apelido\textquotesingle{} \textquotesingle{}nome\textquotesingle{} \+: Cadastra um novo jogador.
+\item RJ \textquotesingle{}apelido\textquotesingle{} \+: Remove um jogador existente.
+\item LJ \textquotesingle{}criterio\textquotesingle{} \+: Lista os jogadores cadastrados com base no critério (\textquotesingle{}N\textquotesingle{} para nome, \textquotesingle{}A\textquotesingle{} para apelido).
+\item EP \textquotesingle{}jogo\textquotesingle{} \textquotesingle{}apelido1\textquotesingle{} \textquotesingle{}apelido2\textquotesingle{} \+: Inicia um jogo entre dois jogadores (R para \mbox{\hyperlink{classReversi}{Reversi}}, L para \mbox{\hyperlink{classLig4}{Lig4}}).
+\item EP \textquotesingle{}jogo\textquotesingle{} \textquotesingle{}apelido1\textquotesingle{} \textquotesingle{}\mbox{\hyperlink{classIA}{IA}}\textquotesingle{} \+: Inicia um jogo entre um jogador e a \mbox{\hyperlink{classIA}{IA}}.
+\item FS \+: Finaliza o sistema.
+\end{DoxyItemize}
+
+O programa continua em execução até que o comando \char`\"{}\+F\+S\char`\"{} seja inserido.
+
+\begin{DoxyReturn}{Returns}
+Retorna 0 após o sistema ser finalizado. 
+\end{DoxyReturn}

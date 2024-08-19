@@ -1,0 +1,4 @@
+<map id="IA" name="IA">
+<area shape="rect" id="node1" title="Classe responsável por representar um jogador controlado por inteligência artificial." alt="" coords="21,80,60,107"/>
+<area shape="rect" id="node2" href="$classJogador.html" title="Armazenar informações do jogador." alt="" coords="5,5,76,32"/>
+</map>

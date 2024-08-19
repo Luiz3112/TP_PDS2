@@ -1,0 +1,153 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Projeto Final -\/ Programação e Desenvolvimento de Software 2}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Visão Geral}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Desenvolvimento do Projeto}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Funcionalidades do Sistema}{1}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Jogos Implementados}{1}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A e Jogabilidade}{2}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Extensões Adicionais}{2}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Documentação e Testes}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Conclusão}{2}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Class Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Cadastro\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jogadores Class Reference}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{9}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Member Function Documentation}{9}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}buscarJogador()}{9}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}cadastrarJogador()}{10}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.3}listarJogadores()}{11}{subsubsection.5.1.2.3}%
+\contentsline {subsubsection}{\numberline {5.1.2.4}removerJogador()}{11}{subsubsection.5.1.2.4}%
+\contentsline {section}{\numberline {5.2}IA Class Reference}{12}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{13}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Constructor \& Destructor Documentation}{13}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}IA()}{13}{subsubsection.5.2.2.1}%
+\contentsline {subsection}{\numberline {5.2.3}Member Function Documentation}{13}{subsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}calcularJogada()}{13}{subsubsection.5.2.3.1}%
+\contentsline {section}{\numberline {5.3}Jogador Class Reference}{14}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{14}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Constructor \& Destructor Documentation}{14}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}Jogador()}{14}{subsubsection.5.3.2.1}%
+\contentsline {subsection}{\numberline {5.3.3}Member Function Documentation}{15}{subsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.3.1}adicionarDerrota()}{15}{subsubsection.5.3.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.3.2}adicionarVitoria()}{15}{subsubsection.5.3.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3.3}getApelido()}{16}{subsubsection.5.3.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.3.4}getNome()}{16}{subsubsection.5.3.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.3.5}imprimirEstatisticas()}{16}{subsubsection.5.3.3.5}%
+\contentsline {section}{\numberline {5.4}Jogo Class Reference}{17}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{17}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Constructor \& Destructor Documentation}{18}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}$\sim $Jogo()}{18}{subsubsection.5.4.2.1}%
+\contentsline {subsection}{\numberline {5.4.3}Member Function Documentation}{18}{subsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.3.1}getAltura()}{18}{subsubsection.5.4.3.1}%
+\contentsline {subsubsection}{\numberline {5.4.3.2}getLargura()}{18}{subsubsection.5.4.3.2}%
+\contentsline {subsubsection}{\numberline {5.4.3.3}imprimirTabuleiro()}{19}{subsubsection.5.4.3.3}%
+\contentsline {subsubsection}{\numberline {5.4.3.4}iniciar()}{19}{subsubsection.5.4.3.4}%
+\contentsline {subsubsection}{\numberline {5.4.3.5}realizarJogada()}{19}{subsubsection.5.4.3.5}%
+\contentsline {subsubsection}{\numberline {5.4.3.6}realizarJogadaIA()}{19}{subsubsection.5.4.3.6}%
+\contentsline {subsubsection}{\numberline {5.4.3.7}validarJogada()}{20}{subsubsection.5.4.3.7}%
+\contentsline {subsubsection}{\numberline {5.4.3.8}verificarVitoria()}{20}{subsubsection.5.4.3.8}%
+\contentsline {section}{\numberline {5.5}Lig4 Class Reference}{21}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{22}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Member Function Documentation}{22}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}alternarJogador()}{22}{subsubsection.5.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.5.2.2}getAltura()}{22}{subsubsection.5.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.3}getLargura()}{23}{subsubsection.5.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.5.2.4}imprimirTabuleiro()}{23}{subsubsection.5.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.5.2.5}iniciar()}{23}{subsubsection.5.5.2.5}%
+\contentsline {subsubsection}{\numberline {5.5.2.6}realizarJogada()}{23}{subsubsection.5.5.2.6}%
+\contentsline {subsubsection}{\numberline {5.5.2.7}realizarJogadaIA()}{24}{subsubsection.5.5.2.7}%
+\contentsline {subsubsection}{\numberline {5.5.2.8}realizarJogadaNaColuna()}{24}{subsubsection.5.5.2.8}%
+\contentsline {subsubsection}{\numberline {5.5.2.9}validarJogada()}{25}{subsubsection.5.5.2.9}%
+\contentsline {subsubsection}{\numberline {5.5.2.10}verificarVitoria()}{25}{subsubsection.5.5.2.10}%
+\contentsline {section}{\numberline {5.6}Reversi Class Reference}{26}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{27}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Member Function Documentation}{27}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.1}getAltura()}{27}{subsubsection.5.6.2.1}%
+\contentsline {subsubsection}{\numberline {5.6.2.2}getLargura()}{28}{subsubsection.5.6.2.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.3}imprimirTabuleiro()}{28}{subsubsection.5.6.2.3}%
+\contentsline {subsubsection}{\numberline {5.6.2.4}iniciar()}{28}{subsubsection.5.6.2.4}%
+\contentsline {subsubsection}{\numberline {5.6.2.5}realizarJogada()}{28}{subsubsection.5.6.2.5}%
+\contentsline {subsubsection}{\numberline {5.6.2.6}realizarJogadaIA()}{29}{subsubsection.5.6.2.6}%
+\contentsline {subsubsection}{\numberline {5.6.2.7}validarJogada()}{29}{subsubsection.5.6.2.7}%
+\contentsline {subsubsection}{\numberline {5.6.2.8}verificarVitoria()}{30}{subsubsection.5.6.2.8}%
+\contentsline {subsection}{\numberline {5.6.3}Member Data Documentation}{31}{subsection.5.6.3}%
+\contentsline {subsubsection}{\numberline {5.6.3.1}jogadorAtual}{31}{subsubsection.5.6.3.1}%
+\contentsline {subsubsection}{\numberline {5.6.3.2}tabuleiro}{31}{subsubsection.5.6.3.2}%
+\contentsline {section}{\numberline {5.7}Sistema Class Reference}{31}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{32}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Member Function Documentation}{32}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}cadastrarJogador()}{32}{subsubsection.5.7.2.1}%
+\contentsline {subsubsection}{\numberline {5.7.2.2}executar()}{32}{subsubsection.5.7.2.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.3}executarPartida()}{33}{subsubsection.5.7.2.3}%
+\contentsline {subsubsection}{\numberline {5.7.2.4}finalizarSistema()}{33}{subsubsection.5.7.2.4}%
+\contentsline {subsubsection}{\numberline {5.7.2.5}listarJogadores()}{34}{subsubsection.5.7.2.5}%
+\contentsline {subsubsection}{\numberline {5.7.2.6}removerJogador()}{34}{subsubsection.5.7.2.6}%
+\contentsline {chapter}{\numberline {6}File Documentation}{37}{chapter.6}%
+\contentsline {section}{\numberline {6.1}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cadastro\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jogadores.hpp File Reference}{37}{section.6.1}%
+\contentsline {section}{\numberline {6.2}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IA.hpp File Reference}{38}{section.6.2}%
+\contentsline {section}{\numberline {6.3}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jogador.hpp File Reference}{39}{section.6.3}%
+\contentsline {section}{\numberline {6.4}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jogo.hpp File Reference}{39}{section.6.4}%
+\contentsline {section}{\numberline {6.5}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lig4.hpp File Reference}{40}{section.6.5}%
+\contentsline {section}{\numberline {6.6}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reversi.hpp File Reference}{40}{section.6.6}%
+\contentsline {section}{\numberline {6.7}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sistema.hpp File Reference}{41}{section.6.7}%
+\contentsline {section}{\numberline {6.8}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md File Reference}{42}{section.6.8}%
+\contentsline {section}{\numberline {6.9}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cadastro\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jogadores.cpp File Reference}{42}{section.6.9}%
+\contentsline {section}{\numberline {6.10}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IA.cpp File Reference}{43}{section.6.10}%
+\contentsline {section}{\numberline {6.11}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jogador.cpp File Reference}{44}{section.6.11}%
+\contentsline {section}{\numberline {6.12}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jogo.cpp File Reference}{44}{section.6.12}%
+\contentsline {section}{\numberline {6.13}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lig4.cpp File Reference}{44}{section.6.13}%
+\contentsline {section}{\numberline {6.14}src/main.cpp File Reference}{45}{section.6.14}%
+\contentsline {subsection}{\numberline {6.14.1}Detailed Description}{46}{subsection.6.14.1}%
+\contentsline {subsection}{\numberline {6.14.2}Function Documentation}{46}{subsection.6.14.2}%
+\contentsline {subsubsection}{\numberline {6.14.2.1}main()}{46}{subsubsection.6.14.2.1}%
+\contentsline {section}{\numberline {6.15}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reversi.cpp File Reference}{47}{section.6.15}%
+\contentsline {section}{\numberline {6.16}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sistema.cpp File Reference}{47}{section.6.16}%
+\contentsline {section}{\numberline {6.17}tests/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Teste\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cadastro\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jogadores.cpp File Reference}{48}{section.6.17}%
+\contentsline {subsection}{\numberline {6.17.1}Function Documentation}{48}{subsection.6.17.1}%
+\contentsline {subsubsection}{\numberline {6.17.1.1}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [1/4]}}{48}{subsubsection.6.17.1.1}%
+\contentsline {subsubsection}{\numberline {6.17.1.2}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [2/4]}}{48}{subsubsection.6.17.1.2}%
+\contentsline {subsubsection}{\numberline {6.17.1.3}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [3/4]}}{49}{subsubsection.6.17.1.3}%
+\contentsline {subsubsection}{\numberline {6.17.1.4}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [4/4]}}{49}{subsubsection.6.17.1.4}%
+\contentsline {section}{\numberline {6.18}tests/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Teste\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IA.cpp File Reference}{49}{section.6.18}%
+\contentsline {subsection}{\numberline {6.18.1}Macro Definition Documentation}{50}{subsection.6.18.1}%
+\contentsline {subsubsection}{\numberline {6.18.1.1}DOCTEST\_CONFIG\_IMPLEMENT\_WITH\_MAIN}{50}{subsubsection.6.18.1.1}%
+\contentsline {subsection}{\numberline {6.18.2}Function Documentation}{50}{subsection.6.18.2}%
+\contentsline {subsubsection}{\numberline {6.18.2.1}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{50}{subsubsection.6.18.2.1}%
+\contentsline {subsubsection}{\numberline {6.18.2.2}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{50}{subsubsection.6.18.2.2}%
+\contentsline {section}{\numberline {6.19}tests/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Teste\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jogador.cpp File Reference}{50}{section.6.19}%
+\contentsline {subsection}{\numberline {6.19.1}Function Documentation}{51}{subsection.6.19.1}%
+\contentsline {subsubsection}{\numberline {6.19.1.1}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{51}{subsubsection.6.19.1.1}%
+\contentsline {subsubsection}{\numberline {6.19.1.2}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{51}{subsubsection.6.19.1.2}%
+\contentsline {section}{\numberline {6.20}tests/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Teste\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jogo.cpp File Reference}{51}{section.6.20}%
+\contentsline {section}{\numberline {6.21}tests/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Teste\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lig4.cpp File Reference}{52}{section.6.21}%
+\contentsline {subsection}{\numberline {6.21.1}Function Documentation}{52}{subsection.6.21.1}%
+\contentsline {subsubsection}{\numberline {6.21.1.1}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [1/4]}}{52}{subsubsection.6.21.1.1}%
+\contentsline {subsubsection}{\numberline {6.21.1.2}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [2/4]}}{52}{subsubsection.6.21.1.2}%
+\contentsline {subsubsection}{\numberline {6.21.1.3}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [3/4]}}{53}{subsubsection.6.21.1.3}%
+\contentsline {subsubsection}{\numberline {6.21.1.4}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [4/4]}}{53}{subsubsection.6.21.1.4}%
+\contentsline {section}{\numberline {6.22}tests/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Teste\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reversi.cpp File Reference}{53}{section.6.22}%
+\contentsline {subsection}{\numberline {6.22.1}Macro Definition Documentation}{54}{subsection.6.22.1}%
+\contentsline {subsubsection}{\numberline {6.22.1.1}DOCTEST\_CONFIG\_IMPLEMENT\_WITH\_MAIN}{54}{subsubsection.6.22.1.1}%
+\contentsline {subsection}{\numberline {6.22.2}Function Documentation}{54}{subsection.6.22.2}%
+\contentsline {subsubsection}{\numberline {6.22.2.1}contarPecas()}{54}{subsubsection.6.22.2.1}%
+\contentsline {subsubsection}{\numberline {6.22.2.2}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [1/5]}}{54}{subsubsection.6.22.2.2}%
+\contentsline {subsubsection}{\numberline {6.22.2.3}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [2/5]}}{54}{subsubsection.6.22.2.3}%
+\contentsline {subsubsection}{\numberline {6.22.2.4}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [3/5]}}{54}{subsubsection.6.22.2.4}%
+\contentsline {subsubsection}{\numberline {6.22.2.5}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [4/5]}}{54}{subsubsection.6.22.2.5}%
+\contentsline {subsubsection}{\numberline {6.22.2.6}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [5/5]}}{55}{subsubsection.6.22.2.6}%
+\contentsline {section}{\numberline {6.23}tests/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Teste\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sistema.cpp File Reference}{55}{section.6.23}%
+\contentsline {subsection}{\numberline {6.23.1}Macro Definition Documentation}{56}{subsection.6.23.1}%
+\contentsline {subsubsection}{\numberline {6.23.1.1}DOCTEST\_CONFIG\_IMPLEMENT\_WITH\_MAIN}{56}{subsubsection.6.23.1.1}%
+\contentsline {subsection}{\numberline {6.23.2}Function Documentation}{56}{subsection.6.23.2}%
+\contentsline {subsubsection}{\numberline {6.23.2.1}main()}{56}{subsubsection.6.23.2.1}%
+\contentsline {subsubsection}{\numberline {6.23.2.2}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [1/5]}}{56}{subsubsection.6.23.2.2}%
+\contentsline {subsubsection}{\numberline {6.23.2.3}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [2/5]}}{56}{subsubsection.6.23.2.3}%
+\contentsline {subsubsection}{\numberline {6.23.2.4}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [3/5]}}{56}{subsubsection.6.23.2.4}%
+\contentsline {subsubsection}{\numberline {6.23.2.5}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [4/5]}}{56}{subsubsection.6.23.2.5}%
+\contentsline {subsubsection}{\numberline {6.23.2.6}TEST\_CASE()\hspace {0.1cm}{\footnotesize \ttfamily [5/5]}}{56}{subsubsection.6.23.2.6}%
+\contentsline {chapter}{Index}{57}{section*.62}%

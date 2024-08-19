@@ -1,0 +1,90 @@
+\hypertarget{classIA}{}\doxysection{IA Class Reference}
+\label{classIA}\index{IA@{IA}}
+
+
+Classe responsável por representar um jogador controlado por inteligência artificial.  
+
+
+
+
+{\ttfamily \#include $<$I\+A.\+hpp$>$}
+
+
+
+Inheritance diagram for IA\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{classIA__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IA\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{classIA__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIA_a358cf7540ca208ab16862e9e677e97d4}{IA}} (const std\+::string \&nome, const std\+::string \&apelido)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classIA}{IA}}. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classIA_a246a1349fff5ae3740585e41fb7cdd4b}{calcular\+Jogada}} (\mbox{\hyperlink{classJogo}{Jogo}} $\ast$jogo)
+\begin{DoxyCompactList}\small\item\em Calcula a próxima jogada com base no estado atual do jogo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe responsável por representar um jogador controlado por inteligência artificial. 
+
+A classe \mbox{\hyperlink{classIA}{IA}} pode substituir um jogador humano e fazer jogadas baseadas em estratégias definidas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIA_a358cf7540ca208ab16862e9e677e97d4}\label{classIA_a358cf7540ca208ab16862e9e677e97d4}} 
+\index{IA@{IA}!IA@{IA}}
+\index{IA@{IA}!IA@{IA}}
+\doxysubsubsection{\texorpdfstring{IA()}{IA()}}
+{\footnotesize\ttfamily I\+A\+::\+IA (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome,  }\item[{const std\+::string \&}]{apelido }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classIA}{IA}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & O nome da \mbox{\hyperlink{classIA}{IA}}. \\
+\hline
+{\em apelido} & O apelido da \mbox{\hyperlink{classIA}{IA}}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIA_a246a1349fff5ae3740585e41fb7cdd4b}\label{classIA_a246a1349fff5ae3740585e41fb7cdd4b}} 
+\index{IA@{IA}!calcularJogada@{calcularJogada}}
+\index{calcularJogada@{calcularJogada}!IA@{IA}}
+\doxysubsubsection{\texorpdfstring{calcularJogada()}{calcularJogada()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ I\+A\+::calcular\+Jogada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classJogo}{Jogo}} $\ast$}]{jogo }\end{DoxyParamCaption})}
+
+
+
+Calcula a próxima jogada com base no estado atual do jogo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & Ponteiro para o jogo atual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um par de inteiros representando a linha e a coluna da jogada escolhida. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{IA_8hpp}{I\+A.\+hpp}}\item 
+src/\mbox{\hyperlink{IA_8cpp}{I\+A.\+cpp}}\end{DoxyCompactItemize}

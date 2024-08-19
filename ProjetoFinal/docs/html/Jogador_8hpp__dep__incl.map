@@ -1,0 +1,15 @@
+<map id="include/Jogador.hpp" name="include/Jogador.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="729,5,878,32"/>
+<area shape="rect" id="node2" href="$CadastroJogadores_8hpp.html" title=" " alt="" coords="356,80,579,107"/>
+<area shape="rect" id="node8" href="$TesteCadastroJogadores_8cpp.html" title=" " alt="" coords="519,155,760,181"/>
+<area shape="rect" id="node9" href="$IA_8hpp.html" title=" " alt="" coords="746,80,861,107"/>
+<area shape="rect" id="node12" href="$Jogador_8cpp.html" title=" " alt="" coords="885,80,1005,107"/>
+<area shape="rect" id="node13" href="$TesteJogador_8cpp.html" title=" " alt="" coords="1029,80,1196,107"/>
+<area shape="rect" id="node3" href="$Sistema_8hpp.html" title=" " alt="" coords="121,155,275,181"/>
+<area shape="rect" id="node7" href="$CadastroJogadores_8cpp.html" title=" " alt="" coords="299,155,494,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="Ponto de entrada para o sistema de gerenciamento de jogos." alt="" coords="5,229,111,256"/>
+<area shape="rect" id="node5" href="$Sistema_8cpp.html" title=" " alt="" coords="135,229,261,256"/>
+<area shape="rect" id="node6" href="$TesteSistema_8cpp.html" title=" " alt="" coords="285,229,457,256"/>
+<area shape="rect" id="node10" href="$IA_8cpp.html" title=" " alt="" coords="785,155,870,181"/>
+<area shape="rect" id="node11" href="$TesteIA_8cpp.html" title=" " alt="" coords="895,155,1027,181"/>
+</map>

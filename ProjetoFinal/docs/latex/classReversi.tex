@@ -1,0 +1,289 @@
+\hypertarget{classReversi}{}\doxysection{Reversi Class Reference}
+\label{classReversi}\index{Reversi@{Reversi}}
+
+
+Classe responsável pelo gerenciamento do jogo Reverse, derivada da classe \mbox{\hyperlink{classJogo}{Jogo}}.  
+
+
+
+
+{\ttfamily \#include $<$Reversi.\+hpp$>$}
+
+
+
+Inheritance diagram for Reversi\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{classReversi__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Reversi\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{classReversi__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classReversi_aa64b60fad452cf88c95019f930b55405}{iniciar}} () override
+\begin{DoxyCompactList}\small\item\em Inicia um novo jogo de \mbox{\hyperlink{classReversi}{Reversi}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classReversi_ae33bf37d393d35c7423014f0b0c768c1}{imprimir\+Tabuleiro}} () override
+\begin{DoxyCompactList}\small\item\em Imprime o estado atual do tabuleiro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classReversi_a5c83b70ccab4c87af6597403b3fced1d}{validar\+Jogada}} (int linha, int coluna) override
+\begin{DoxyCompactList}\small\item\em Valida se a posicao da jogada é possivel. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classReversi_a56023c8352450c8a1c6b3cfaa9ad3095}{verificar\+Vitoria}} () override
+\begin{DoxyCompactList}\small\item\em Verifica se o jogo terminou por falta de jogadas válidas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classReversi_ade10ed883d2bf15b671d1c2ceb3d4e58}{realizar\+Jogada}} (int linha, int coluna) override
+\begin{DoxyCompactList}\small\item\em Realiza a jogada no tabuleiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classReversi_a670da43afa79b98e48afc244d29237f2}{realizar\+Jogada\+IA}} () override
+\begin{DoxyCompactList}\small\item\em Realiza a jogada da \mbox{\hyperlink{classIA}{IA}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classReversi_aa4f8ec26963e0984532852e7ed8c4817}{get\+Altura}} () const override
+\begin{DoxyCompactList}\small\item\em Obtém a altura do tabuleiro do jogo \mbox{\hyperlink{classReversi}{Reversi}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classReversi_a8897faa4be4cb8a2e14cd72cc67a4626}{get\+Largura}} () const override
+\begin{DoxyCompactList}\small\item\em Obtém a largura do tabuleiro do jogo \mbox{\hyperlink{classReversi}{Reversi}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ char $>$ $>$ \mbox{\hyperlink{classReversi_a63648028efa337a57cd1153d5f9703f3}{tabuleiro}}
+\begin{DoxyCompactList}\small\item\em Representação do tabuleiro do jogo lig4, com 6 linhas e 7 colunas. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classReversi_a3ca4208a992ccaf2bcc1a5d50d68dbc5}{jogador\+Atual}}
+\begin{DoxyCompactList}\small\item\em Armazena o jogador atual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe responsável pelo gerenciamento do jogo Reverse, derivada da classe \mbox{\hyperlink{classJogo}{Jogo}}. 
+
+A classe \mbox{\hyperlink{classReversi}{Reversi}} gerencia o estado e as regras do jogo \mbox{\hyperlink{classReversi}{Reversi}}. Ela herda todos os métodos da classe \mbox{\hyperlink{classJogo}{Jogo}} e implementa funcionalidades específicas para o jogo \mbox{\hyperlink{classReversi}{Reversi}}, como a alternância de jogadores, validação de jogadas, realização de jogadas e verificação de vitória. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classReversi_aa4f8ec26963e0984532852e7ed8c4817}\label{classReversi_aa4f8ec26963e0984532852e7ed8c4817}} 
+\index{Reversi@{Reversi}!getAltura@{getAltura}}
+\index{getAltura@{getAltura}!Reversi@{Reversi}}
+\doxysubsubsection{\texorpdfstring{getAltura()}{getAltura()}}
+{\footnotesize\ttfamily int Reversi\+::get\+Altura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém a altura do tabuleiro do jogo \mbox{\hyperlink{classReversi}{Reversi}}. 
+
+\begin{DoxyReturn}{Returns}
+A altura do tabuleiro. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogo_a63f83c33654a10175c16da83e6e1e8fc}{Jogo}}.
+
+\mbox{\Hypertarget{classReversi_a8897faa4be4cb8a2e14cd72cc67a4626}\label{classReversi_a8897faa4be4cb8a2e14cd72cc67a4626}} 
+\index{Reversi@{Reversi}!getLargura@{getLargura}}
+\index{getLargura@{getLargura}!Reversi@{Reversi}}
+\doxysubsubsection{\texorpdfstring{getLargura()}{getLargura()}}
+{\footnotesize\ttfamily int Reversi\+::get\+Largura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém a largura do tabuleiro do jogo \mbox{\hyperlink{classReversi}{Reversi}}. 
+
+\begin{DoxyReturn}{Returns}
+A largura do tabuleiro. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogo_abe0185d7242d25b39cc3f105dae95313}{Jogo}}.
+
+\mbox{\Hypertarget{classReversi_ae33bf37d393d35c7423014f0b0c768c1}\label{classReversi_ae33bf37d393d35c7423014f0b0c768c1}} 
+\index{Reversi@{Reversi}!imprimirTabuleiro@{imprimirTabuleiro}}
+\index{imprimirTabuleiro@{imprimirTabuleiro}!Reversi@{Reversi}}
+\doxysubsubsection{\texorpdfstring{imprimirTabuleiro()}{imprimirTabuleiro()}}
+{\footnotesize\ttfamily void Reversi\+::imprimir\+Tabuleiro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Imprime o estado atual do tabuleiro. 
+
+Este método percorre o tabuleiro e imprime cada célula, formatando o tabuleiro para que cada linha seja representada por uma linha de caracteres no console. Cada célula é delimitada por um pipe (\textquotesingle{}$\vert$\textquotesingle{}). No final, as colunas e linhas do tabuleiro são numeradas de 0 a 7. 
+
+Implements \mbox{\hyperlink{classJogo_a227dc442e308a7509c870ba80e7f8934}{Jogo}}.
+
+\mbox{\Hypertarget{classReversi_aa64b60fad452cf88c95019f930b55405}\label{classReversi_aa64b60fad452cf88c95019f930b55405}} 
+\index{Reversi@{Reversi}!iniciar@{iniciar}}
+\index{iniciar@{iniciar}!Reversi@{Reversi}}
+\doxysubsubsection{\texorpdfstring{iniciar()}{iniciar()}}
+{\footnotesize\ttfamily void Reversi\+::iniciar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Inicia um novo jogo de \mbox{\hyperlink{classReversi}{Reversi}}. 
+
+Esta função inicializa o tabuleiro de \mbox{\hyperlink{classReversi}{Reversi}} com 8 linhas e 8 colunas, preenchendo 4 espaços no meio (com X e O) e o resto com espaços em branco (\textquotesingle{} \textquotesingle{}). Ela também define o jogador atual como \textquotesingle{}X\textquotesingle{}, dando uma breve descrição de como jogar e exibe o estado inicial do tabuleiro.
+
+\begin{DoxyNote}{Note}
+Esta função deve ser chamada no início de cada nova partida. 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classJogo_aec1fcd5c1468768ddb96a1eed4bddfbf}{Jogo}}.
+
+\mbox{\Hypertarget{classReversi_ade10ed883d2bf15b671d1c2ceb3d4e58}\label{classReversi_ade10ed883d2bf15b671d1c2ceb3d4e58}} 
+\index{Reversi@{Reversi}!realizarJogada@{realizarJogada}}
+\index{realizarJogada@{realizarJogada}!Reversi@{Reversi}}
+\doxysubsubsection{\texorpdfstring{realizarJogada()}{realizarJogada()}}
+{\footnotesize\ttfamily void Reversi\+::realizar\+Jogada (\begin{DoxyParamCaption}\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Realiza a jogada no tabuleiro. 
+
+Realiza a jogada do jogador atual na posição especificada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & A linha onde a jogada será realizada. \\
+\hline
+{\em coluna} & A coluna onde a jogada será realizada.\\
+\hline
+\end{DoxyParams}
+Este método verifica se a jogada na posição especificada (linha e coluna) é válida para o jogador atual. Se a jogada for válida, o método atualiza o tabuleiro, vira as peças do oponente que foram capturadas, alterna para o próximo jogador e imprime o estado atualizado do tabuleiro.
+
+O método funciona da seguinte maneira\+:
+\begin{DoxyItemize}
+\item Verifica se a jogada é válida chamando o método \textquotesingle{}jogada\+Valida\textquotesingle{} para a posição especificada.
+\item Se a jogada for válida\+:
+\begin{DoxyItemize}
+\item A peça do jogador atual é colocada na posição indicada no tabuleiro.
+\item O método \textquotesingle{}virar\+Pecas\textquotesingle{} é chamado para capturar as peças do oponente.
+\item O jogador atual é alternado utilizando o método \textquotesingle{}alternar\+Jogador\textquotesingle{}.
+\item O tabuleiro atualizado é impresso chamando o método \textquotesingle{}imprimir\+Tabuleiro\textquotesingle{}.
+\end{DoxyItemize}
+\item Se a jogada não for válida, uma mensagem de erro é exibida no console.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & A linha onde a jogada será realizada. \\
+\hline
+{\em coluna} & A coluna onde a jogada será realizada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classJogo_a6d39f30f8fda70bd82c8012a827f19c0}{Jogo}}.
+
+\mbox{\Hypertarget{classReversi_a670da43afa79b98e48afc244d29237f2}\label{classReversi_a670da43afa79b98e48afc244d29237f2}} 
+\index{Reversi@{Reversi}!realizarJogadaIA@{realizarJogadaIA}}
+\index{realizarJogadaIA@{realizarJogadaIA}!Reversi@{Reversi}}
+\doxysubsubsection{\texorpdfstring{realizarJogadaIA()}{realizarJogadaIA()}}
+{\footnotesize\ttfamily void Reversi\+::realizar\+Jogada\+IA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Realiza a jogada da \mbox{\hyperlink{classIA}{IA}}. 
+
+Realiza uma jogada automática pela \mbox{\hyperlink{classIA}{IA}}.
+
+Este método é responsável por decidir e realizar uma jogada automática pela \mbox{\hyperlink{classIA}{IA}}.
+
+A \mbox{\hyperlink{classIA}{IA}} escolhe uma jogada com base na configuração atual do tabuleiro e realiza a jogada. 
+
+Implements \mbox{\hyperlink{classJogo_a554702eb069af53759ebb9303b4fb431}{Jogo}}.
+
+\mbox{\Hypertarget{classReversi_a5c83b70ccab4c87af6597403b3fced1d}\label{classReversi_a5c83b70ccab4c87af6597403b3fced1d}} 
+\index{Reversi@{Reversi}!validarJogada@{validarJogada}}
+\index{validarJogada@{validarJogada}!Reversi@{Reversi}}
+\doxysubsubsection{\texorpdfstring{validarJogada()}{validarJogada()}}
+{\footnotesize\ttfamily bool Reversi\+::validar\+Jogada (\begin{DoxyParamCaption}\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Valida se a posicao da jogada é possivel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & A linha onde a jogada será realizada. \\
+\hline
+{\em coluna} & A coluna onde a jogada será realizada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} se a jogada for válida, {\ttfamily false} caso contrário.
+\end{DoxyReturn}
+A funcao joda\+Valida retorna \textquotesingle{}true\textquotesingle{} e \textquotesingle{}false\textquotesingle{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & A linha onde a jogada será realizada. \\
+\hline
+{\em coluna} & A coluna onde a jogada será realizada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} se a jogada for válida, {\ttfamily false} caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogo_a4924bccbeab84b79a62cac68f85e0c7a}{Jogo}}.
+
+\mbox{\Hypertarget{classReversi_a56023c8352450c8a1c6b3cfaa9ad3095}\label{classReversi_a56023c8352450c8a1c6b3cfaa9ad3095}} 
+\index{Reversi@{Reversi}!verificarVitoria@{verificarVitoria}}
+\index{verificarVitoria@{verificarVitoria}!Reversi@{Reversi}}
+\doxysubsubsection{\texorpdfstring{verificarVitoria()}{verificarVitoria()}}
+{\footnotesize\ttfamily bool Reversi\+::verificar\+Vitoria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Verifica se o jogo terminou por falta de jogadas válidas. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} se houve vitória,\textquotesingle{}false\textquotesingle{} caso contrário.
+\end{DoxyReturn}
+Este método percorre todo o tabuleiro e verifica se ainda há jogadas válidas disponíveis para qualquer um dos jogadores (\textquotesingle{}X\textquotesingle{} ou \textquotesingle{}O\textquotesingle{}). O jogo é considerado terminado se não houver jogadas válidas restantes para nenhum dos jogadores.
+
+O método funciona da seguinte forma\+:
+\begin{DoxyItemize}
+\item Para cada posição do tabuleiro 8x8, verifica se a posição permite uma jogada válida para \textquotesingle{}X\textquotesingle{} ou \textquotesingle{}O\textquotesingle{}.
+\item Se for encontrada pelo menos uma jogada válida, o método retorna {\ttfamily false}, indicando que o jogo pode continuar.
+\item Se nenhuma jogada válida for encontrada em todo o tabuleiro, o método retorna {\ttfamily true}, indicando que o jogo terminou.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} se o jogo terminou (nenhuma jogada válida restante para qualquer jogador), {\ttfamily false} caso contrário. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classJogo_a75bd4ef99ce26b6c3a903b1d4ee3daf5}{Jogo}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classReversi_a3ca4208a992ccaf2bcc1a5d50d68dbc5}\label{classReversi_a3ca4208a992ccaf2bcc1a5d50d68dbc5}} 
+\index{Reversi@{Reversi}!jogadorAtual@{jogadorAtual}}
+\index{jogadorAtual@{jogadorAtual}!Reversi@{Reversi}}
+\doxysubsubsection{\texorpdfstring{jogadorAtual}{jogadorAtual}}
+{\footnotesize\ttfamily char Reversi\+::jogador\+Atual}
+
+
+
+Armazena o jogador atual. 
+
+O jogador atual pode ser ou X ou O. \mbox{\Hypertarget{classReversi_a63648028efa337a57cd1153d5f9703f3}\label{classReversi_a63648028efa337a57cd1153d5f9703f3}} 
+\index{Reversi@{Reversi}!tabuleiro@{tabuleiro}}
+\index{tabuleiro@{tabuleiro}!Reversi@{Reversi}}
+\doxysubsubsection{\texorpdfstring{tabuleiro}{tabuleiro}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$char$>$ $>$ Reversi\+::tabuleiro}
+
+
+
+Representação do tabuleiro do jogo lig4, com 6 linhas e 7 colunas. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Reversi_8hpp}{Reversi.\+hpp}}\item 
+src/\mbox{\hyperlink{Reversi_8cpp}{Reversi.\+cpp}}\end{DoxyCompactItemize}
