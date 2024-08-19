@@ -3,6 +3,8 @@
 
 #include "Jogo.hpp"
 #include <vector>
+#include <limits>
+#include <sstream> 
 
 /**
  * @class Lig4
@@ -68,6 +70,21 @@ private:
  * @brief Representação do tabuleiro do jogo lig4, com 6 linhas e 7 colunas.
  */
     std::vector<std::vector<char>> tabuleiro;
+
+/**
+ * @brief Número de linhas do tabuleiro
+ */
+    int numLinhas = 0;
+
+/**
+ * @brief Número de colunas do tabuleiro
+ */
+    int numColunas = 0;
+
+/**
+ * @brief Cria o tabuleiro de acordo com o usuario
+ */
+    void criarTabuleiro();
 
 /**
  * @brief Armazena o jogador atual.

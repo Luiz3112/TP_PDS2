@@ -4,20 +4,43 @@
 /**
  * @brief Inicia um novo jogo de Lig4.
  *
- * Esta função inicializa o tabuleiro de Lig4 com 6 linhas e 7 colunas,
- * todas preenchidas com espaços em branco (' '). Ela também define o
+ * Esta metodo chama a função criarTabuleiro para inicializa-lo. Ela também define o
  * jogador atual como 'X', dando uma breve descrição de como jogar e exibe
  * o estado inicial do tabuleiro.
  *
  * @note Esta função deve ser chamada no início de cada nova partida.
  */
 void Lig4::iniciar() {
-    tabuleiro = std::vector<std::vector<char>>(6, std::vector<char>(7, ' '));
+    std::cout <<"\nInforme as dimençoes do tabuleiro: 'numero linhas' 'numero colunas'" << std::endl;
+    criarTabuleiro();
     jogadorAtual = 'X';
     std::cout << "\nCOMO JOGAR-> digite 'numero coluna' da jogada" << std::endl;
     std::cout << "SAIR DO JOGO-> digite 'SAIR'\n";
     imprimirTabuleiro();
 }
+
+/**
+ * @brief Cria o tabuleiro de acordo com o usuário
+ * 
+ * Esse método inicializa o tabuleiro de Lig4 com as dimenções (numero de linhas e colunas)
+ * informadas pelo usuário,todas as células do vetor tabuleiro são preenchidas com espaços 
+ * em branco (' ')
+ */
+void Lig4::criarTabuleiro() {
+    std::string dimençoes;
+    std::cout << "Numero de linhas e colunas: "; 
+    std::getline(std::cin, dimençoes);
+    std::istringstream iss(dimençoes);
+
+    if (!(iss >> numLinhas >> numColunas) || numLinhas < 4 || numLinhas > 10 || numColunas < 4 || numColunas > 10) {
+        std::cout << "\nERRO: Entrada inválida. Por favor, digite dois números válidos.\n"
+                  << "OBS-> O menor tamanho é 4x4 e o maior 10x10\n" << std::endl;
+        criarTabuleiro(); // Chama novamente a função até obter um valor válido
+    }
+    tabuleiro = std::vector<std::vector<char>>(numLinhas, std::vector<char>(numColunas, ' '));
+}
+
+
 
 /**
  * @brief Imprime o estado atual do tabuleiro.
@@ -36,7 +59,10 @@ void Lig4::imprimirTabuleiro() {
         }
         std::cout << "|" << std::endl;
     }
-    std::cout << " 0 1 2 3 4 5 6 " << std::endl;  //locazar a coluna
+    for(int i = 0; i < numColunas; i++){
+        std::cout << " " << i;
+    }
+    std::cout << std::endl;
 }
 
 /**
@@ -64,8 +90,8 @@ bool Lig4::validarJogada(int linha, int coluna) {
  * @return `true` se houve vitória, `false` caso contrário.
  */
 bool Lig4::verificarVitoria() {
-    for (int i = 0; i < 6; ++i) {
-        for (int j = 0; j < 7; ++j) {
+    for (int i = 0; i < numLinhas; ++i) {
+        for (int j = 0; j < numColunas; ++j) {
             if (tabuleiro[i][j] != ' ' && (
                 verificarVitoriaNaDirecao(i, j, 1, 0) || 
                 verificarVitoriaNaDirecao(i, j, 0, 1) || 
@@ -135,7 +161,7 @@ bool Lig4::jogadaValida(int coluna) {
  * @param coluna A coluna onde a jogada será realizada.
  */
 void Lig4::realizarJogadaNaColuna(int coluna) {
-    for (int i = 5; i >= 0; --i) {
+    for (int i = (numLinhas-1); i >= 0; --i) {
         if (tabuleiro[i][coluna] == ' ') {
             tabuleiro[i][coluna] = jogadorAtual;
             break;
@@ -165,7 +191,7 @@ bool Lig4::verificarVitoriaNaDirecao(int linha, int coluna, int dLinha, int dCol
         int novaLinha = linha + i * dLinha;
         int novaColuna = coluna + i * dColuna;
 
-        if (novaLinha >= 0 && novaLinha < 6 && novaColuna >= 0 && novaColuna < 7 && tabuleiro[novaLinha][novaColuna] == jogador) {
+        if (novaLinha >= 0 && novaLinha < numLinhas && novaColuna >= 0 && novaColuna < numColunas && tabuleiro[novaLinha][novaColuna] == jogador) {
             contagem++;
         } else {
             break;

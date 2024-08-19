@@ -87,10 +87,10 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
     std::string jogada;
     bool turnoJogador1 = true; 
     std::string apelidoAtual = apelido1;
-    char simboloAtual = 'X';
+    char simboloAtual;
     while (!partida->verificarVitoria()) {
-        simboloAtual = simboloAtual ? 'X' : 'O';
         apelidoAtual = turnoJogador1 ? apelido1 : apelido2;
+        simboloAtual = (apelidoAtual == apelido1) ? 'X' : 'O';
         std::cout << "Turno de jogador " << apelidoAtual << " (" << simboloAtual << "): ";
         std::getline(std::cin, jogada);
         std::istringstream iss(jogada);
