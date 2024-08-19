@@ -50,6 +50,18 @@ public:
  */
     void realizarJogada(int linha, int coluna) override;
 
+    /**
+ * @brief Alterna o jogador que vai jogar.
+ */
+    void alternarJogador();
+
+    /**
+ * @brief Realiza uma jogada na coluna especificada.
+ * 
+ * @param coluna A coluna onde a jogada será realizada.
+ */
+    void realizarJogadaNaColuna(int coluna);
+
 private:
 
 /**
@@ -65,11 +77,6 @@ private:
     char jogadorAtual;
 
 /**
- * @brief Alterna o jogador que vai jogar.
- */
-    void alternarJogador();
-
-/**
  * @brief Valida a jogada na coluna especificada.
  * 
  * @param coluna A coluna onde a jogada será realizada.
@@ -81,13 +88,6 @@ private:
  * @brief Verifica as direções.
  */
     bool verificarDirecao(int linha, int coluna, int dLinha, int dColuna);
-
-/**
- * @brief Realiza uma jogada na coluna especificada.
- * 
- * @param coluna A coluna onde a jogada será realizada.
- */
-    void realizarJogadaNaColuna(int coluna);
 
 /**
  * @brief Verifica se há uma vitória em uma direção específica.

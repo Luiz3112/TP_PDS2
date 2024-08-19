@@ -50,19 +50,20 @@ public:
  */
     void realizarJogada(int linha, int coluna) override;
 
-private:
-
-/**
+    /**
  * @brief Representação do tabuleiro do jogo lig4, com 6 linhas e 7 colunas.
  */
     std::vector<std::vector<char>> tabuleiro;
 
-/**
+    /**
  * @brief Armazena o jogador atual.
  * 
  * O jogador atual pode ser ou X ou O.
  */
     char jogadorAtual;
+
+private:
+
 
 /**
  * @brief Alterna o jogador que vai jogar.
