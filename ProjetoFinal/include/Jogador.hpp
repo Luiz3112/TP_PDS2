@@ -36,14 +36,14 @@ public:
 /**
  * @brief Adiciona uma vitoria ao jogo jogado.
  * 
- * @param jogo Defini qual jogo foi jogado.
+ * @param jogo Define qual jogo foi jogado.
  */
     void adicionarVitoria(const std::string& jogo);
 
 /**
  * @brief Adiciona uma derrota ao jogo jogado.
  * 
- * @param jogo Defini qual jogo foi jogado.
+ * @param jogo Define qual jogo foi jogado.
  */
     void adicionarDerrota(const std::string& jogo);
 
