@@ -48,19 +48,40 @@ public:
  * @param linha A linha onde a jogada será realizada.
  * @param coluna A coluna onde a jogada será realizada.
  */
-    void realizarJogada(int linha, int coluna) override;
+   void realizarJogada(int linha, int coluna) override;
 
-    /**
+/**
+* @brief Realiza a jogada da IA.
+* 
+* Este método é responsável por decidir e realizar uma jogada automática pela IA.
+*/
+   void realizarJogadaIA() override;
+
+/**
+* @brief Obtém a altura do tabuleiro do jogo Reversi.
+* 
+* @return A altura do tabuleiro.
+*/
+   int getAltura() const override;
+
+/**
+* @brief Obtém a largura do tabuleiro do jogo Reversi.
+* 
+* @return A largura do tabuleiro.
+*/
+   int getLargura() const override;
+
+/**
  * @brief Representação do tabuleiro do jogo lig4, com 6 linhas e 7 colunas.
  */
-    std::vector<std::vector<char>> tabuleiro;
+   std::vector<std::vector<char>> tabuleiro;
 
-    /**
+   /**
  * @brief Armazena o jogador atual.
  * 
  * O jogador atual pode ser ou X ou O.
  */
-    char jogadorAtual;
+   char jogadorAtual;
 
 private:
 

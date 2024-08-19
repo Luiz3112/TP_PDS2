@@ -1,5 +1,7 @@
 #include "Reversi.hpp"
 #include <iostream>
+#include <cstdlib> 
+#include <ctime>
 
 /**
  * @brief Inicia um novo jogo de Reversi.
@@ -20,6 +22,24 @@ void Reversi::iniciar() {
     std::cout << "\nCOMO JOGAR-> digite 'numero linha' 'numero coluna' da jogada" << std::endl;
     std::cout << "SAIR DO JOGO-> digite 'SAIR'\n";
     imprimirTabuleiro();
+}
+
+/**
+ * @brief Obtém a altura do tabuleiro do jogo Reversi.
+ * 
+ * @return A altura do tabuleiro.
+ */
+int Reversi::getAltura() const {
+    return 8; // O tabuleiro de Reversi tem 8 linhas
+}
+
+/**
+ * @brief Obtém a largura do tabuleiro do jogo Reversi.
+ * 
+ * @return A largura do tabuleiro.
+ */
+int Reversi::getLargura() const {
+    return 8; // O tabuleiro de Reversi tem 8 colunas
 }
 
 /**
@@ -110,6 +130,31 @@ void Reversi::realizarJogada(int linha, int coluna) {
         imprimirTabuleiro();
     } else {
         std::cout << "ERRO: jogada inválida\n" << std::endl;
+    }
+}
+
+/**
+ * @brief Realiza uma jogada automática pela IA.
+ * 
+ * A IA escolhe uma jogada com base na configuração atual do tabuleiro e realiza a jogada.
+ */
+
+void Reversi::realizarJogadaIA() {
+    std::vector<std::pair<int, int>> jogadasValidas;
+
+    for (int linha = 0; linha < getAltura(); ++linha) {
+        for (int coluna = 0; coluna < getLargura(); ++coluna) {
+            if (validarJogada(linha, coluna)) {
+                jogadasValidas.emplace_back(linha, coluna);
+            }
+        }
+    }
+
+    if (!jogadasValidas.empty()) {
+        std::srand(static_cast<unsigned>(std::time(0))); 
+        int index = std::rand() % jogadasValidas.size();
+        auto jogada = jogadasValidas[index];
+        realizarJogada(jogada.first, jogada.second);
     }
 }
 

@@ -54,7 +54,7 @@ public:
  * 
  * @param jogo Qual o tipo de jogo será jogado
  * @param apelido1 Apelido do jogador 1.
- * @param apelido2 Apelido do jogador 2.
+ * @param apelido2 Apelido do jogador 2. Se definido como "IA", o jogador 1 jogará contra o computador.
  * @return 'true' quando a partida foi executada com sucesso, 'false' se houve
  * algum problema na execução.
  */

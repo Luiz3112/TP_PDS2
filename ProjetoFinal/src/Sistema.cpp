@@ -67,14 +67,15 @@ void Sistema::listarJogadores(char criterio) {
  * 
  * @param jogo O tipo de jogo a ser jogado ("R" para Reversi, "L" para Lig4).
  * @param apelido1 O apelido do jogador 1.
- * @param apelido2 O apelido do jogador 2.
+ * @param apelido2 O apelido do jogador 2. Caso seja definido como "IA", o jogador 1 joga contra o computador.
  * @return `true` se a partida foi concluída com sucesso, `false` se houve algum 
  * problema na execução, como jogadores não encontrados ou jogo inválido.
  */
 bool Sistema::executarPartida(const std::string& jogo, const std::string& apelido1, const std::string& apelido2) {
     Jogador* jogador1 = cadastro.buscarJogador(apelido1);
-    Jogador* jogador2 = cadastro.buscarJogador(apelido2);
-    if (!jogador1 || !jogador2) {
+    Jogador* jogador2 = (apelido2 == "IA") ? nullptr : cadastro.buscarJogador(apelido2);
+
+    if (!jogador1 || (!jogador2 && apelido2 != "IA")) {
         return false;
     }
 
@@ -85,55 +86,71 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
 
     partida->iniciar();
     std::string jogada;
-    bool turnoJogador1 = true; 
-    std::string apelidoAtual = apelido1;
+    bool turnoJogador1 = true; // Começa com jogador1
+    std::string apelidoAtual;
     char simboloAtual;
-    while (!partida->verificarVitoria()) {
+
+    while (!partida->verificarVitoria() && jogada != "SAIR") {
         apelidoAtual = turnoJogador1 ? apelido1 : apelido2;
         simboloAtual = (apelidoAtual == apelido1) ? 'X' : 'O';
-        std::cout << "Turno de jogador " << apelidoAtual << " (" << simboloAtual << "): ";
-        std::getline(std::cin, jogada);
-        std::istringstream iss(jogada);
-        int linha, coluna;
-        if(jogada == "SAIR"){     //funcao criada para sair no meio do jogo  
-            break;
-        }else if (jogo == "R") { // Reversi
-            if (!(iss >> linha >> coluna)) {
-                std::cout << "ERRO: formato incorreto\n" << std::endl;
-                continue;
-            }
-        } else if (jogo == "L") { // Lig4
-            if (!(iss >> coluna)) {
-                std::cout << "ERRO: formato incorreto\n" << std::endl;
-                continue;
-            }
-            linha = 0; // Linha não é usada no Lig4
-        }
 
-        if (partida->validarJogada(linha, coluna)) {
-            partida->realizarJogada(linha, coluna);
-            turnoJogador1 = !turnoJogador1; 
+        if (apelidoAtual == "IA") {
+            std::cout << "Turno da IA (" << simboloAtual << "):\n";
+            if (jogo == "R") {
+                static_cast<Reversi*>(partida)->realizarJogadaIA(); // Jogada automática da IA em Reversi
+            } else if (jogo == "L") {
+                static_cast<Lig4*>(partida)->realizarJogadaIA(); // Jogada automática da IA em Lig4
+            }
+            turnoJogador1 = !turnoJogador1; // Alterna o turno após a jogada da IA
         } else {
-            std::cout << "ERRO: jogada inválida\n" << std::endl;
+            std::cout << "Turno de jogador " << apelidoAtual << " (" << simboloAtual << "): ";
+            std::getline(std::cin >> std::ws, jogada);
+
+            if (jogada == "SAIR") {
+                break;
+            }
+
+            std::istringstream iss(jogada);
+            int linha, coluna;
+
+            if (jogo == "R") { // Reversi
+                if (!(iss >> linha >> coluna)) {
+                    std::cout << "ERRO: formato incorreto\n" << std::endl;
+                    continue;
+                }
+            } else if (jogo == "L") { // Lig4
+                if (!(iss >> coluna)) {
+                    std::cout << "ERRO: formato incorreto\n" << std::endl;
+                    continue;
+                }
+                linha = 0;
+            }
+
+            if (partida->validarJogada(linha, coluna)) {
+                partida->realizarJogada(linha, coluna);
+                turnoJogador1 = !turnoJogador1; // Alterna o turno após a jogada do jogador
+            } else {
+                std::cout << "ERRO: jogada inválida\n" << std::endl;
+            }
         }
     }
-    
-    if(jogada == "SAIR"){
+
+    if (jogada == "SAIR") {
         std::cout << "\n  " << apelidoAtual << " SAIU DO JOGO" << std::endl;
         apelidoAtual = !turnoJogador1 ? apelido1 : apelido2;
-        std::cout << "  VITÓRIA "  << apelidoAtual << "!\n" << std::endl;
-
-    }else {
-        std::cout << "\n VITÓRIA "  << apelidoAtual << "!\n" << std::endl;
+        std::cout << "  VITÓRIA " << apelidoAtual << "!\n" << std::endl;
+    } else {
+        std::cout << "\n VITÓRIA " << apelidoAtual << "!\n" << std::endl;
     }
 
     cadastro.buscarJogador(apelidoAtual)->adicionarVitoria(jogo);
     apelidoAtual = turnoJogador1 ? apelido1 : apelido2;
     cadastro.buscarJogador(apelidoAtual)->adicionarDerrota(jogo);
-    
+
     delete partida;
     return true;
 }
+
 
 /**
  * @brief Imprime uma mensagem de finalição da partida.

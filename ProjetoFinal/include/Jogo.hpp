@@ -11,6 +11,7 @@ public:
     virtual bool validarJogada(int linha, int coluna) = 0;
     virtual bool verificarVitoria() = 0;
     virtual void realizarJogada(int linha, int coluna) = 0;
+    virtual void realizarJogadaIA() = 0;
 };
 
 #endif 

@@ -21,6 +21,7 @@
  * - RJ 'apelido' : Remove um jogador existente.
  * - LJ 'criterio' : Lista os jogadores cadastrados com base no critério ('N' para nome, 'A' para apelido).
  * - EP 'jogo' 'apelido1' 'apelido2' : Inicia um jogo entre dois jogadores (R para Reversi, L para Lig4).
+ * - EP 'jogo' 'apelido1' 'IA' : Inicia um jogo entre um jogador e a IA.
  * - FS : Finaliza o sistema.
  * 
  * O programa continua em execução até que o comando "FS" seja inserido.
@@ -34,7 +35,9 @@ int main() {
     std::cout << "\n(CJ 'apelido' 'nome') CADASTRO JOGADOR\n" 
               << "(RJ 'apelido') REMOCAO JOGADOR\n"
               << "(LJ 'criterio') LISTAR ESTATISTICAS {N-> ordem por nome; A-> ordem por apelido}\n"
-              << "(EP 'jogo' 'apelido1' 'apelido2') INICIAR JOGO {L-> Lig4; R-> Reversi}\n" << std::endl;
+              << "(EP 'jogo' 'apelido1' 'apelido2') INICIAR JOGO {L-> Lig4; R-> Reversi}\n"
+              << "(EP 'jogo' 'apelido1' 'IA') INICIAR JOGO CONTRA IA {L-> Lig4; R-> Reversi}\n"
+              << "(FS) FINALIZA O SISTEMA\n" << std::endl;
 
     while (true) {
         std::cout << "Digite um comando:";
@@ -77,10 +80,21 @@ int main() {
         } else if (comando == "EP") {
             std::string jogo, apelido1, apelido2;
             iss >> jogo >> apelido1 >> apelido2;
-            if (jogo.empty() || apelido1.empty() || apelido2.empty() || (jogo != "R" && jogo != "L")) {
+
+            if (jogo.empty() || apelido1.empty() || (jogo != "R" && jogo != "L")) {
                 std::cout << "ERRO: dados incorretos\n" << std::endl;
-            } else if (!sistema.executarPartida(jogo, apelido1, apelido2)) {
-                std::cout << "ERRO: jogador inexistente\n" << std::endl;
+            } else if (apelido2 == "IA") {
+                // Jogar contra IA
+                if (!sistema.executarPartida(jogo, apelido1, "IA")) {
+                    std::cout << "ERRO: jogador inexistente ou jogo inválido\n" << std::endl;
+                }
+            } else {
+                // Jogar contra outro jogador
+                if (apelido2.empty()) {
+                    std::cout << "ERRO: dados incorretos\n" << std::endl;
+                } else if (!sistema.executarPartida(jogo, apelido1, apelido2)) {
+                    std::cout << "ERRO: jogador inexistente\n" << std::endl;
+                }
             }
         } else {
             std::cout << "Comando não reconhecido. Tente novamente.\n" << std::endl;

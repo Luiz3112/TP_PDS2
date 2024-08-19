@@ -51,6 +51,27 @@ public:
  * @param coluna A coluna onde a jogada será realizada.
  */
     void realizarJogada(int linha, int coluna) override;
+    
+/**
+* @brief Realiza a jogada da IA.
+* 
+* Este método é responsável por decidir e realizar uma jogada automática pela IA.
+*/
+    void realizarJogadaIA() override;
+
+/**
+ * @brief Retorna o número de linhas (altura) do tabuleiro.
+ * 
+ * @return Número de linhas do tabuleiro.
+ */
+    int getAltura() const override;
+
+/**
+ * @brief Retorna o número de colunas (largura) do tabuleiro.
+ * 
+ * @return Número de colunas do tabuleiro.
+ */
+    int getLargura() const override;
 
     /**
  * @brief Alterna o jogador que vai jogar.

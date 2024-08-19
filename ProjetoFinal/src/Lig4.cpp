@@ -1,5 +1,7 @@
 #include "Lig4.hpp"
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 /**
  * @brief Inicia um novo jogo de Lig4.
@@ -20,6 +22,24 @@ void Lig4::iniciar() {
 }
 
 /**
+ * @brief Retorna o número de linhas (altura) do tabuleiro.
+ * 
+ * @return Número de linhas do tabuleiro.
+ */
+int Lig4::getAltura() const {
+    return numLinhas;
+}
+
+/**
+ * @brief Retorna o número de colunas (largura) do tabuleiro.
+ * 
+ * @return Número de colunas do tabuleiro.
+ */
+int Lig4::getLargura() const {
+    return numColunas;
+}
+
+/**
  * @brief Cria o tabuleiro de acordo com o usuário
  * 
  * Esse método inicializa o tabuleiro de Lig4 com as dimenções (numero de linhas e colunas)
@@ -27,10 +47,10 @@ void Lig4::iniciar() {
  * em branco (' ')
  */
 void Lig4::criarTabuleiro() {
-    std::string dimençoes;
+    std::string dimencoes;
     std::cout << "Numero de linhas e colunas: "; 
-    std::getline(std::cin, dimençoes);
-    std::istringstream iss(dimençoes);
+    std::getline(std::cin, dimencoes);
+    std::istringstream iss(dimencoes);
 
     if (!(iss >> numLinhas >> numColunas) || numLinhas < 4 || numLinhas > 10 || numColunas < 4 || numColunas > 10) {
         std::cout << "\nERRO: Entrada inválida. Por favor, digite dois números válidos.\n"
@@ -39,8 +59,6 @@ void Lig4::criarTabuleiro() {
     }
     tabuleiro = std::vector<std::vector<char>>(numLinhas, std::vector<char>(numColunas, ' '));
 }
-
-
 
 /**
  * @brief Imprime o estado atual do tabuleiro.
@@ -125,6 +143,23 @@ void Lig4::realizarJogada(int linha, int coluna) {
     } else {
         std::cout << "ERRO: jogada inválida\n" << std::endl;
     }
+}
+
+/**
+ * @brief Realiza uma jogada automática pela IA.
+ * 
+ * A IA escolhe uma jogada com base na configuração atual do tabuleiro e realiza a jogada.
+ */
+
+void Lig4::realizarJogadaIA() {
+    std::srand(static_cast<unsigned>(std::time(0)));
+
+    int coluna;
+    do {
+        coluna = std::rand() % getLargura();
+    } while (!validarJogada(0, coluna));
+
+    realizarJogada(0, coluna);
 }
 
 /**
