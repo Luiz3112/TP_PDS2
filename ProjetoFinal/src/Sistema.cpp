@@ -139,18 +139,25 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
         std::cout << "\n  " << apelidoAtual << " SAIU DO JOGO" << std::endl;
         apelidoAtual = !turnoJogador1 ? apelido1 : apelido2;
         std::cout << "  VITÓRIA " << apelidoAtual << "!\n" << std::endl;
-    } else {
+    } else if (!partida->empatePartida()){
         std::cout << "\n VITÓRIA " << apelidoAtual << "!\n" << std::endl;
     }
     
-    if(apelidoAtual != "IA"){
-        cadastro.buscarJogador(apelidoAtual)->adicionarVitoria(jogo);
-        apelidoAtual = turnoJogador1 ? apelido1 : apelido2;
-    }
+    if (!partida->empatePartida()){
+        if(apelidoAtual != "IA"){
+            cadastro.buscarJogador(apelidoAtual)->adicionarVitoria(jogo);
+            apelidoAtual = turnoJogador1 ? apelido1 : apelido2;
+        }
     
-    if(apelidoAtual != "IA"){
-        cadastro.buscarJogador(apelidoAtual)->adicionarDerrota(jogo);
+        if(apelidoAtual != "IA"){
+            cadastro.buscarJogador(apelidoAtual)->adicionarDerrota(jogo);
+        }
     }
+
+     if (partida->empatePartida()){
+        std::cout << "\n  EMPATE\n" << std::endl;
+     }
+    
 
     delete partida;
     return true;

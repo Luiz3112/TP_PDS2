@@ -71,6 +71,11 @@ public:
 */
    int getLargura() const override;
 
+    
+   
+   bool empatePartida() override;
+
+
 /**
  * @brief Representação do tabuleiro do jogo lig4, com 6 linhas e 7 colunas.
  */

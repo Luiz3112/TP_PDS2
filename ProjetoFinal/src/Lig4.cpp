@@ -120,6 +120,23 @@ bool Lig4::verificarVitoria() {
             }
         }
     }
+
+    return empatePartida();
+}
+
+/**
+ * @brief Verifica seu acabou o numero de jogadas possiveis
+ * 
+ * @param _numJogadas É o numero de posições ja ocupadas no tabuleiro
+ * @return 'true' se numero de jogadas igual ao maximo possivel
+ * 'false' caso contrário
+ * 
+ * @note "_numJogadas" é dividida por 2 pois e chamda 2x na por jogada
+ */
+bool Lig4::empatePartida(){
+    if((numJogadas/2) == numColunas*numLinhas){ 
+        return true;
+    }
     return false;
 }
 
@@ -183,7 +200,11 @@ void Lig4::alternarJogador() {
  * @return `true` se a jogada for válida, `false` caso contrário. 
  */
 bool Lig4::jogadaValida(int coluna) {
-    return tabuleiro[0][coluna] == ' ';
+    if(tabuleiro[0][coluna] == ' '){
+        numJogadas++;
+        return true;
+    }
+    return false;
 }
 
 /**

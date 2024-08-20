@@ -80,6 +80,8 @@ public:
      * automática com base na configuração atual do tabuleiro.
      */
     virtual void realizarJogadaIA() = 0;
+
+    virtual bool empatePartida() = 0;
 };
 
 #endif

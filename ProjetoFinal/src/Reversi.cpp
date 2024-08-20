@@ -306,3 +306,7 @@ void Reversi::virarDirecao(int linha, int coluna, int dLinha, int dColuna, char 
         j += dColuna;
     }
 }
+
+bool Reversi::empatePartida(){
+    return false;
+}

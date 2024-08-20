@@ -73,6 +73,13 @@ public:
  */
     int getLargura() const override;
 
+/**
+ * @brief Verifica seu acabou o numero de jogadas possiveis
+ * 
+ * @param _numJogadas É o numero de posições ja ocupadas no tabuleiro
+ */
+    bool empatePartida() override;
+
     /**
  * @brief Alterna o jogador que vai jogar.
  */
@@ -101,6 +108,13 @@ private:
  * @brief Número de colunas do tabuleiro
  */
     int numColunas = 0;
+
+/**
+ * @brief Número de jogadas que houve no jogo
+ * 
+ * Server para verificar empate
+ */
+    int numJogadas;
 
 /**
  * @brief Cria o tabuleiro de acordo com o usuario
