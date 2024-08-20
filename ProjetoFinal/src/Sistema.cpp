@@ -86,7 +86,7 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
 
     partida->iniciar();
     std::string jogada;
-    bool turnoJogador1 = true; // Começa com jogador1
+    bool turnoJogador1 = true; 
     std::string apelidoAtual;
     char simboloAtual;
 
@@ -97,11 +97,11 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
         if (apelidoAtual == "IA") {
             std::cout << "Turno da IA (" << simboloAtual << "):\n";
             if (jogo == "R") {
-                static_cast<Reversi*>(partida)->realizarJogadaIA(); // Jogada automática da IA em Reversi
+                static_cast<Reversi*>(partida)->realizarJogadaIA(); 
             } else if (jogo == "L") {
-                static_cast<Lig4*>(partida)->realizarJogadaIA(); // Jogada automática da IA em Lig4
+                static_cast<Lig4*>(partida)->realizarJogadaIA(); 
             }
-            turnoJogador1 = !turnoJogador1; // Alterna o turno após a jogada da IA
+            turnoJogador1 = !turnoJogador1; 
         } else {
             std::cout << "Turno de jogador " << apelidoAtual << " (" << simboloAtual << "): ";
             std::getline(std::cin >> std::ws, jogada);
@@ -118,7 +118,7 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
                     std::cout << "ERRO: formato incorreto\n" << std::endl;
                     continue;
                 }
-            } else if (jogo == "L") { // Lig4
+            } else if (jogo == "L") { 
                 if (!(iss >> coluna)) {
                     std::cout << "ERRO: formato incorreto\n" << std::endl;
                     continue;
@@ -128,7 +128,7 @@ bool Sistema::executarPartida(const std::string& jogo, const std::string& apelid
 
             if (partida->validarJogada(linha, coluna)) {
                 partida->realizarJogada(linha, coluna);
-                turnoJogador1 = !turnoJogador1; // Alterna o turno após a jogada do jogador
+                turnoJogador1 = !turnoJogador1; 
             } else {
                 std::cout << "ERRO: jogada inválida\n" << std::endl;
             }

@@ -96,41 +96,46 @@ $(function() {
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classLig4.html#ac54682dc8228869dc3bdc15b527fc9df">getLargura</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLig4.html#a027adf13666708d6da7d64e4069ac15f">alternarJogador</a>();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLig4.html#a5aa7bb88acb85a843032da85abde771d">realizarJogadaNaColuna</a>(<span class="keywordtype">int</span> coluna);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classLig4.html#a16dbdaa6f2fcea48c27c91061df3b067">empatePartida</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLig4.html#a027adf13666708d6da7d64e4069ac15f">alternarJogador</a>();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::vector&lt;std::vector&lt;char&gt;&gt; tabuleiro;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classLig4.html#a5aa7bb88acb85a843032da85abde771d">realizarJogadaNaColuna</a>(<span class="keywordtype">int</span> coluna);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">int</span> numLinhas = 0;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">int</span> numColunas = 0;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> criarTabuleiro();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">char</span> jogadorAtual;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">bool</span> jogadaValida(<span class="keywordtype">int</span> coluna);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">bool</span> verificarDirecao(<span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna, <span class="keywordtype">int</span> dLinha, <span class="keywordtype">int</span> dColuna);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">bool</span> verificarVitoriaNaDirecao(<span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna, <span class="keywordtype">int</span> dLinha, <span class="keywordtype">int</span> dColuna);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;};</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::vector&lt;std::vector&lt;char&gt;&gt; tabuleiro;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">int</span> numLinhas = 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">int</span> numColunas = 0;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">int</span> numJogadas;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span> criarTabuleiro();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">char</span> jogadorAtual;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">bool</span> jogadaValida(<span class="keywordtype">int</span> coluna);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">bool</span> verificarDirecao(<span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna, <span class="keywordtype">int</span> dLinha, <span class="keywordtype">int</span> dColuna);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">bool</span> verificarVitoriaNaDirecao(<span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna, <span class="keywordtype">int</span> dLinha, <span class="keywordtype">int</span> dColuna);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;};</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif </span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassLig4_html_a889be75c8f741a30209f7f1269dae465"><div class="ttname"><a href="classLig4.html#a889be75c8f741a30209f7f1269dae465">Lig4::validarJogada</a></div><div class="ttdeci">bool validarJogada(int linha, int coluna) override</div><div class="ttdoc">Valida se a posicao da jogada é possivel.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:95</div></div>
 <div class="ttc" id="aJogo_8hpp_html"><div class="ttname"><a href="Jogo_8hpp.html">Jogo.hpp</a></div></div>
-<div class="ttc" id="aclassLig4_html_a5aa7bb88acb85a843032da85abde771d"><div class="ttname"><a href="classLig4.html#a5aa7bb88acb85a843032da85abde771d">Lig4::realizarJogadaNaColuna</a></div><div class="ttdeci">void realizarJogadaNaColuna(int coluna)</div><div class="ttdoc">Realiza uma jogada na coluna especificada.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:198</div></div>
+<div class="ttc" id="aclassLig4_html_a5aa7bb88acb85a843032da85abde771d"><div class="ttname"><a href="classLig4.html#a5aa7bb88acb85a843032da85abde771d">Lig4::realizarJogadaNaColuna</a></div><div class="ttdeci">void realizarJogadaNaColuna(int coluna)</div><div class="ttdoc">Realiza uma jogada na coluna especificada.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:219</div></div>
 <div class="ttc" id="aclassLig4_html_a495d8fb3850edaaf29d70eb511d134fb"><div class="ttname"><a href="classLig4.html#a495d8fb3850edaaf29d70eb511d134fb">Lig4::imprimirTabuleiro</a></div><div class="ttdeci">void imprimirTabuleiro() override</div><div class="ttdoc">Imprime o estado atual do tabuleiro.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:71</div></div>
-<div class="ttc" id="aclassLig4_html_ac522749fa36447cc8d4ab4796def3176"><div class="ttname"><a href="classLig4.html#ac522749fa36447cc8d4ab4796def3176">Lig4::realizarJogadaIA</a></div><div class="ttdeci">void realizarJogadaIA() override</div><div class="ttdoc">Realiza a jogada da IA.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:154</div></div>
-<div class="ttc" id="aclassLig4_html_a027adf13666708d6da7d64e4069ac15f"><div class="ttname"><a href="classLig4.html#a027adf13666708d6da7d64e4069ac15f">Lig4::alternarJogador</a></div><div class="ttdeci">void alternarJogador()</div><div class="ttdoc">Alterna o jogador que vai jogar.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:171</div></div>
+<div class="ttc" id="aclassLig4_html_ac522749fa36447cc8d4ab4796def3176"><div class="ttname"><a href="classLig4.html#ac522749fa36447cc8d4ab4796def3176">Lig4::realizarJogadaIA</a></div><div class="ttdeci">void realizarJogadaIA() override</div><div class="ttdoc">Realiza a jogada da IA.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:171</div></div>
+<div class="ttc" id="aclassLig4_html_a027adf13666708d6da7d64e4069ac15f"><div class="ttname"><a href="classLig4.html#a027adf13666708d6da7d64e4069ac15f">Lig4::alternarJogador</a></div><div class="ttdeci">void alternarJogador()</div><div class="ttdoc">Alterna o jogador que vai jogar.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:188</div></div>
 <div class="ttc" id="aclassLig4_html_ac54682dc8228869dc3bdc15b527fc9df"><div class="ttname"><a href="classLig4.html#ac54682dc8228869dc3bdc15b527fc9df">Lig4::getLargura</a></div><div class="ttdeci">int getLargura() const override</div><div class="ttdoc">Retorna o número de colunas (largura) do tabuleiro.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:38</div></div>
 <div class="ttc" id="aclassLig4_html_ad41322530b0cf6ad3b13da51f5818fcd"><div class="ttname"><a href="classLig4.html#ad41322530b0cf6ad3b13da51f5818fcd">Lig4::getAltura</a></div><div class="ttdeci">int getAltura() const override</div><div class="ttdoc">Retorna o número de linhas (altura) do tabuleiro.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:29</div></div>
 <div class="ttc" id="aclassLig4_html_a7d88164fb1a147040417191705e5e0fc"><div class="ttname"><a href="classLig4.html#a7d88164fb1a147040417191705e5e0fc">Lig4::verificarVitoria</a></div><div class="ttdeci">bool verificarVitoria() override</div><div class="ttdoc">Verica se houve vitória.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:110</div></div>
-<div class="ttc" id="aclassLig4_html_a0480e6110172715ee6c484e84b357e63"><div class="ttname"><a href="classLig4.html#a0480e6110172715ee6c484e84b357e63">Lig4::realizarJogada</a></div><div class="ttdeci">void realizarJogada(int linha, int coluna) override</div><div class="ttdoc">Realiza a jogada no tabuleiro.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:138</div></div>
+<div class="ttc" id="aclassLig4_html_a16dbdaa6f2fcea48c27c91061df3b067"><div class="ttname"><a href="classLig4.html#a16dbdaa6f2fcea48c27c91061df3b067">Lig4::empatePartida</a></div><div class="ttdeci">bool empatePartida() override</div><div class="ttdoc">Verifica seu acabou o numero de jogadas possiveis.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:136</div></div>
+<div class="ttc" id="aclassLig4_html_a0480e6110172715ee6c484e84b357e63"><div class="ttname"><a href="classLig4.html#a0480e6110172715ee6c484e84b357e63">Lig4::realizarJogada</a></div><div class="ttdeci">void realizarJogada(int linha, int coluna) override</div><div class="ttdoc">Realiza a jogada no tabuleiro.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:155</div></div>
 <div class="ttc" id="aclassJogo_html"><div class="ttname"><a href="classJogo.html">Jogo</a></div><div class="ttdoc">Classe base abstrata para jogos.</div><div class="ttdef"><b>Definition:</b> Jogo.hpp:13</div></div>
 <div class="ttc" id="aclassLig4_html"><div class="ttname"><a href="classLig4.html">Lig4</a></div><div class="ttdoc">Classe responsável pelo gerenciamento do jogo Lig4, derivada da classe Jogo.</div><div class="ttdef"><b>Definition:</b> Lig4.hpp:18</div></div>
 <div class="ttc" id="aclassLig4_html_a30a104865206bb5bc0fbbf14155db207"><div class="ttname"><a href="classLig4.html#a30a104865206bb5bc0fbbf14155db207">Lig4::iniciar</a></div><div class="ttdeci">void iniciar() override</div><div class="ttdoc">Inicia um novo jogo de Lig4.</div><div class="ttdef"><b>Definition:</b> Lig4.cpp:15</div></div>

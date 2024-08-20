@@ -48,6 +48,8 @@ int \mbox{\hyperlink{classLig4_ad41322530b0cf6ad3b13da51f5818fcd}{get\+Altura}} 
 \begin{DoxyCompactList}\small\item\em Retorna o número de linhas (altura) do tabuleiro. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classLig4_ac54682dc8228869dc3bdc15b527fc9df}{get\+Largura}} () const override
 \begin{DoxyCompactList}\small\item\em Retorna o número de colunas (largura) do tabuleiro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLig4_a16dbdaa6f2fcea48c27c91061df3b067}{empate\+Partida}} () override
+\begin{DoxyCompactList}\small\item\em Verifica seu acabou o numero de jogadas possiveis. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classLig4_a027adf13666708d6da7d64e4069ac15f}{alternar\+Jogador}} ()
 \begin{DoxyCompactList}\small\item\em Alterna o jogador que vai jogar. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classLig4_a5aa7bb88acb85a843032da85abde771d}{realizar\+Jogada\+Na\+Coluna}} (int coluna)
@@ -72,7 +74,34 @@ Alterna o jogador que vai jogar.
 
 Alterna o jogador atual.
 
-Este método troca o jogador atual, alternando entre \textquotesingle{}X\textquotesingle{} e \textquotesingle{}O\textquotesingle{}. Se o jogador atual for \textquotesingle{}X\textquotesingle{}, ele será alterado para \textquotesingle{}O\textquotesingle{}. Caso contrário, será alterado para \textquotesingle{}X\textquotesingle{}. \mbox{\Hypertarget{classLig4_ad41322530b0cf6ad3b13da51f5818fcd}\label{classLig4_ad41322530b0cf6ad3b13da51f5818fcd}} 
+Este método troca o jogador atual, alternando entre \textquotesingle{}X\textquotesingle{} e \textquotesingle{}O\textquotesingle{}. Se o jogador atual for \textquotesingle{}X\textquotesingle{}, ele será alterado para \textquotesingle{}O\textquotesingle{}. Caso contrário, será alterado para \textquotesingle{}X\textquotesingle{}. \mbox{\Hypertarget{classLig4_a16dbdaa6f2fcea48c27c91061df3b067}\label{classLig4_a16dbdaa6f2fcea48c27c91061df3b067}} 
+\index{Lig4@{Lig4}!empatePartida@{empatePartida}}
+\index{empatePartida@{empatePartida}!Lig4@{Lig4}}
+\doxysubsubsection{\texorpdfstring{empatePartida()}{empatePartida()}}
+{\footnotesize\ttfamily bool Lig4\+::empate\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Verifica seu acabou o numero de jogadas possiveis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+num\+Jogadas} & É o numero de posições ja ocupadas no tabuleiro\\
+\hline
+{\em \+\_\+num\+Jogadas} & É o numero de posições ja ocupadas no tabuleiro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} se numero de jogadas igual ao maximo possivel \textquotesingle{}false\textquotesingle{} caso contrário
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\char`\"{}\+\_\+num\+Jogadas\char`\"{} é dividida por 2 pois e chamda 2x na por jogada 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classJogo_aeebae44b5244f817919d97ecc56e0c94}{Jogo}}.
+
+\mbox{\Hypertarget{classLig4_ad41322530b0cf6ad3b13da51f5818fcd}\label{classLig4_ad41322530b0cf6ad3b13da51f5818fcd}} 
 \index{Lig4@{Lig4}!getAltura@{getAltura}}
 \index{getAltura@{getAltura}!Lig4@{Lig4}}
 \doxysubsubsection{\texorpdfstring{getAltura()}{getAltura()}}

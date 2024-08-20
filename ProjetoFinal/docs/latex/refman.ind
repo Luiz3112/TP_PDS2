@@ -21,7 +21,7 @@
 
   \item {cadastrarJogador}
     \subitem {CadastroJogadores}, \hyperpage{10}
-    \subitem {Sistema}, \hyperpage{32}
+    \subitem {Sistema}, \hyperpage{33}
   \item {CadastroJogadores}, \hyperpage{9}
     \subitem {buscarJogador}, \hyperpage{9}
     \subitem {cadastrarJogador}, \hyperpage{10}
@@ -41,28 +41,32 @@
 
   \indexspace
 
+  \item {empatePartida}
+    \subitem {Jogo}, \hyperpage{18}
+    \subitem {Lig4}, \hyperpage{22}
+    \subitem {Reversi}, \hyperpage{28}
   \item {executar}
-    \subitem {Sistema}, \hyperpage{32}
+    \subitem {Sistema}, \hyperpage{33}
   \item {executarPartida}
-    \subitem {Sistema}, \hyperpage{32}
+    \subitem {Sistema}, \hyperpage{33}
 
   \indexspace
 
   \item {finalizarSistema}
-    \subitem {Sistema}, \hyperpage{33}
+    \subitem {Sistema}, \hyperpage{34}
 
   \indexspace
 
   \item {getAltura}
     \subitem {Jogo}, \hyperpage{18}
-    \subitem {Lig4}, \hyperpage{22}
-    \subitem {Reversi}, \hyperpage{27}
+    \subitem {Lig4}, \hyperpage{23}
+    \subitem {Reversi}, \hyperpage{28}
   \item {getApelido}
     \subitem {Jogador}, \hyperpage{16}
   \item {getLargura}
     \subitem {Jogo}, \hyperpage{18}
-    \subitem {Lig4}, \hyperpage{22}
-    \subitem {Reversi}, \hyperpage{27}
+    \subitem {Lig4}, \hyperpage{23}
+    \subitem {Reversi}, \hyperpage{28}
   \item {getNome}
     \subitem {Jogador}, \hyperpage{16}
 
@@ -76,7 +80,7 @@
   \item {imprimirTabuleiro}
     \subitem {Jogo}, \hyperpage{18}
     \subitem {Lig4}, \hyperpage{23}
-    \subitem {Reversi}, \hyperpage{28}
+    \subitem {Reversi}, \hyperpage{29}
   \item {include/CadastroJogadores.hpp}, \hyperpage{37}
   \item {include/IA.hpp}, \hyperpage{38}
   \item {include/Jogador.hpp}, \hyperpage{39}
@@ -87,7 +91,7 @@
   \item {iniciar}
     \subitem {Jogo}, \hyperpage{19}
     \subitem {Lig4}, \hyperpage{23}
-    \subitem {Reversi}, \hyperpage{28}
+    \subitem {Reversi}, \hyperpage{29}
 
   \indexspace
 
@@ -99,9 +103,10 @@
     \subitem {imprimirEstatisticas}, \hyperpage{16}
     \subitem {Jogador}, \hyperpage{14}
   \item {jogadorAtual}
-    \subitem {Reversi}, \hyperpage{31}
+    \subitem {Reversi}, \hyperpage{32}
   \item {Jogo}, \hyperpage{17}
     \subitem {$\sim$Jogo}, \hyperpage{18}
+    \subitem {empatePartida}, \hyperpage{18}
     \subitem {getAltura}, \hyperpage{18}
     \subitem {getLargura}, \hyperpage{18}
     \subitem {imprimirTabuleiro}, \hyperpage{18}
@@ -115,18 +120,19 @@
 
   \item {Lig4}, \hyperpage{21}
     \subitem {alternarJogador}, \hyperpage{22}
-    \subitem {getAltura}, \hyperpage{22}
-    \subitem {getLargura}, \hyperpage{22}
+    \subitem {empatePartida}, \hyperpage{22}
+    \subitem {getAltura}, \hyperpage{23}
+    \subitem {getLargura}, \hyperpage{23}
     \subitem {imprimirTabuleiro}, \hyperpage{23}
     \subitem {iniciar}, \hyperpage{23}
-    \subitem {realizarJogada}, \hyperpage{23}
+    \subitem {realizarJogada}, \hyperpage{24}
     \subitem {realizarJogadaIA}, \hyperpage{24}
-    \subitem {realizarJogadaNaColuna}, \hyperpage{24}
+    \subitem {realizarJogadaNaColuna}, \hyperpage{25}
     \subitem {validarJogada}, \hyperpage{25}
-    \subitem {verificarVitoria}, \hyperpage{25}
+    \subitem {verificarVitoria}, \hyperpage{26}
   \item {listarJogadores}
     \subitem {CadastroJogadores}, \hyperpage{11}
-    \subitem {Sistema}, \hyperpage{33}
+    \subitem {Sistema}, \hyperpage{34}
 
   \indexspace
 
@@ -141,38 +147,39 @@
   \item {README.md}, \hyperpage{42}
   \item {realizarJogada}
     \subitem {Jogo}, \hyperpage{19}
-    \subitem {Lig4}, \hyperpage{23}
-    \subitem {Reversi}, \hyperpage{28}
+    \subitem {Lig4}, \hyperpage{24}
+    \subitem {Reversi}, \hyperpage{29}
   \item {realizarJogadaIA}
     \subitem {Jogo}, \hyperpage{19}
     \subitem {Lig4}, \hyperpage{24}
-    \subitem {Reversi}, \hyperpage{29}
+    \subitem {Reversi}, \hyperpage{30}
   \item {realizarJogadaNaColuna}
-    \subitem {Lig4}, \hyperpage{24}
+    \subitem {Lig4}, \hyperpage{25}
   \item {removerJogador}
     \subitem {CadastroJogadores}, \hyperpage{11}
-    \subitem {Sistema}, \hyperpage{34}
-  \item {Reversi}, \hyperpage{26}
-    \subitem {getAltura}, \hyperpage{27}
-    \subitem {getLargura}, \hyperpage{27}
-    \subitem {imprimirTabuleiro}, \hyperpage{28}
-    \subitem {iniciar}, \hyperpage{28}
-    \subitem {jogadorAtual}, \hyperpage{31}
-    \subitem {realizarJogada}, \hyperpage{28}
-    \subitem {realizarJogadaIA}, \hyperpage{29}
-    \subitem {tabuleiro}, \hyperpage{31}
-    \subitem {validarJogada}, \hyperpage{29}
-    \subitem {verificarVitoria}, \hyperpage{30}
+    \subitem {Sistema}, \hyperpage{35}
+  \item {Reversi}, \hyperpage{27}
+    \subitem {empatePartida}, \hyperpage{28}
+    \subitem {getAltura}, \hyperpage{28}
+    \subitem {getLargura}, \hyperpage{28}
+    \subitem {imprimirTabuleiro}, \hyperpage{29}
+    \subitem {iniciar}, \hyperpage{29}
+    \subitem {jogadorAtual}, \hyperpage{32}
+    \subitem {realizarJogada}, \hyperpage{29}
+    \subitem {realizarJogadaIA}, \hyperpage{30}
+    \subitem {tabuleiro}, \hyperpage{32}
+    \subitem {validarJogada}, \hyperpage{30}
+    \subitem {verificarVitoria}, \hyperpage{31}
 
   \indexspace
 
-  \item {Sistema}, \hyperpage{31}
-    \subitem {cadastrarJogador}, \hyperpage{32}
-    \subitem {executar}, \hyperpage{32}
-    \subitem {executarPartida}, \hyperpage{32}
-    \subitem {finalizarSistema}, \hyperpage{33}
-    \subitem {listarJogadores}, \hyperpage{33}
-    \subitem {removerJogador}, \hyperpage{34}
+  \item {Sistema}, \hyperpage{32}
+    \subitem {cadastrarJogador}, \hyperpage{33}
+    \subitem {executar}, \hyperpage{33}
+    \subitem {executarPartida}, \hyperpage{33}
+    \subitem {finalizarSistema}, \hyperpage{34}
+    \subitem {listarJogadores}, \hyperpage{34}
+    \subitem {removerJogador}, \hyperpage{35}
   \item {src/CadastroJogadores.cpp}, \hyperpage{42}
   \item {src/IA.cpp}, \hyperpage{43}
   \item {src/Jogador.cpp}, \hyperpage{44}
@@ -185,7 +192,7 @@
   \indexspace
 
   \item {tabuleiro}
-    \subitem {Reversi}, \hyperpage{31}
+    \subitem {Reversi}, \hyperpage{32}
   \item {TEST\_CASE}
     \subitem {TesteCadastroJogadores.cpp}, \hyperpage{48, 49}
     \subitem {TesteIA.cpp}, \hyperpage{50}
@@ -223,10 +230,10 @@
   \item {validarJogada}
     \subitem {Jogo}, \hyperpage{20}
     \subitem {Lig4}, \hyperpage{25}
-    \subitem {Reversi}, \hyperpage{29}
+    \subitem {Reversi}, \hyperpage{30}
   \item {verificarVitoria}
     \subitem {Jogo}, \hyperpage{20}
-    \subitem {Lig4}, \hyperpage{25}
-    \subitem {Reversi}, \hyperpage{30}
+    \subitem {Lig4}, \hyperpage{26}
+    \subitem {Reversi}, \hyperpage{31}
 
 \end{theindex}

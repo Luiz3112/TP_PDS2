@@ -39,7 +39,9 @@ virtual bool \mbox{\hyperlink{classJogo_a75bd4ef99ce26b6c3a903b1d4ee3daf5}{verif
 virtual void \mbox{\hyperlink{classJogo_a6d39f30f8fda70bd82c8012a827f19c0}{realizar\+Jogada}} (int linha, int coluna)=0
 \begin{DoxyCompactList}\small\item\em Realiza uma jogada. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classJogo_a554702eb069af53759ebb9303b4fb431}{realizar\+Jogada\+IA}} ()=0
-\begin{DoxyCompactList}\small\item\em Realiza uma jogada automática pela \mbox{\hyperlink{classIA}{IA}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Realiza uma jogada automática pela \mbox{\hyperlink{classIA}{IA}}. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classJogo_aeebae44b5244f817919d97ecc56e0c94}{empate\+Partida}} ()=0
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -61,6 +63,16 @@ Destrutor virtual.
 O destrutor é virtual para garantir que o destruidor da classe derivada seja chamado corretamente quando um objeto da classe derivada for destruído através de um ponteiro para a classe base. 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJogo_aeebae44b5244f817919d97ecc56e0c94}\label{classJogo_aeebae44b5244f817919d97ecc56e0c94}} 
+\index{Jogo@{Jogo}!empatePartida@{empatePartida}}
+\index{empatePartida@{empatePartida}!Jogo@{Jogo}}
+\doxysubsubsection{\texorpdfstring{empatePartida()}{empatePartida()}}
+{\footnotesize\ttfamily virtual bool Jogo\+::empate\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classLig4_a16dbdaa6f2fcea48c27c91061df3b067}{Lig4}}, and \mbox{\hyperlink{classReversi_a263f762f5c00b91c4a801b29f31b2349}{Reversi}}.
+
 \mbox{\Hypertarget{classJogo_a63f83c33654a10175c16da83e6e1e8fc}\label{classJogo_a63f83c33654a10175c16da83e6e1e8fc}} 
 \index{Jogo@{Jogo}!getAltura@{getAltura}}
 \index{getAltura@{getAltura}!Jogo@{Jogo}}

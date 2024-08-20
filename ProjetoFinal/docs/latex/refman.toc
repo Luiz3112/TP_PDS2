@@ -43,50 +43,53 @@
 \contentsline {subsection}{\numberline {5.4.2}Constructor \& Destructor Documentation}{18}{subsection.5.4.2}%
 \contentsline {subsubsection}{\numberline {5.4.2.1}$\sim $Jogo()}{18}{subsubsection.5.4.2.1}%
 \contentsline {subsection}{\numberline {5.4.3}Member Function Documentation}{18}{subsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {5.4.3.1}getAltura()}{18}{subsubsection.5.4.3.1}%
-\contentsline {subsubsection}{\numberline {5.4.3.2}getLargura()}{18}{subsubsection.5.4.3.2}%
-\contentsline {subsubsection}{\numberline {5.4.3.3}imprimirTabuleiro()}{19}{subsubsection.5.4.3.3}%
-\contentsline {subsubsection}{\numberline {5.4.3.4}iniciar()}{19}{subsubsection.5.4.3.4}%
-\contentsline {subsubsection}{\numberline {5.4.3.5}realizarJogada()}{19}{subsubsection.5.4.3.5}%
-\contentsline {subsubsection}{\numberline {5.4.3.6}realizarJogadaIA()}{19}{subsubsection.5.4.3.6}%
-\contentsline {subsubsection}{\numberline {5.4.3.7}validarJogada()}{20}{subsubsection.5.4.3.7}%
-\contentsline {subsubsection}{\numberline {5.4.3.8}verificarVitoria()}{20}{subsubsection.5.4.3.8}%
+\contentsline {subsubsection}{\numberline {5.4.3.1}empatePartida()}{18}{subsubsection.5.4.3.1}%
+\contentsline {subsubsection}{\numberline {5.4.3.2}getAltura()}{18}{subsubsection.5.4.3.2}%
+\contentsline {subsubsection}{\numberline {5.4.3.3}getLargura()}{18}{subsubsection.5.4.3.3}%
+\contentsline {subsubsection}{\numberline {5.4.3.4}imprimirTabuleiro()}{19}{subsubsection.5.4.3.4}%
+\contentsline {subsubsection}{\numberline {5.4.3.5}iniciar()}{19}{subsubsection.5.4.3.5}%
+\contentsline {subsubsection}{\numberline {5.4.3.6}realizarJogada()}{19}{subsubsection.5.4.3.6}%
+\contentsline {subsubsection}{\numberline {5.4.3.7}realizarJogadaIA()}{19}{subsubsection.5.4.3.7}%
+\contentsline {subsubsection}{\numberline {5.4.3.8}validarJogada()}{20}{subsubsection.5.4.3.8}%
+\contentsline {subsubsection}{\numberline {5.4.3.9}verificarVitoria()}{20}{subsubsection.5.4.3.9}%
 \contentsline {section}{\numberline {5.5}Lig4 Class Reference}{21}{section.5.5}%
 \contentsline {subsection}{\numberline {5.5.1}Detailed Description}{22}{subsection.5.5.1}%
 \contentsline {subsection}{\numberline {5.5.2}Member Function Documentation}{22}{subsection.5.5.2}%
 \contentsline {subsubsection}{\numberline {5.5.2.1}alternarJogador()}{22}{subsubsection.5.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.5.2.2}getAltura()}{22}{subsubsection.5.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.5.2.3}getLargura()}{23}{subsubsection.5.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.5.2.4}imprimirTabuleiro()}{23}{subsubsection.5.5.2.4}%
-\contentsline {subsubsection}{\numberline {5.5.2.5}iniciar()}{23}{subsubsection.5.5.2.5}%
-\contentsline {subsubsection}{\numberline {5.5.2.6}realizarJogada()}{23}{subsubsection.5.5.2.6}%
-\contentsline {subsubsection}{\numberline {5.5.2.7}realizarJogadaIA()}{24}{subsubsection.5.5.2.7}%
-\contentsline {subsubsection}{\numberline {5.5.2.8}realizarJogadaNaColuna()}{24}{subsubsection.5.5.2.8}%
-\contentsline {subsubsection}{\numberline {5.5.2.9}validarJogada()}{25}{subsubsection.5.5.2.9}%
-\contentsline {subsubsection}{\numberline {5.5.2.10}verificarVitoria()}{25}{subsubsection.5.5.2.10}%
-\contentsline {section}{\numberline {5.6}Reversi Class Reference}{26}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{27}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Member Function Documentation}{27}{subsection.5.6.2}%
-\contentsline {subsubsection}{\numberline {5.6.2.1}getAltura()}{27}{subsubsection.5.6.2.1}%
-\contentsline {subsubsection}{\numberline {5.6.2.2}getLargura()}{28}{subsubsection.5.6.2.2}%
-\contentsline {subsubsection}{\numberline {5.6.2.3}imprimirTabuleiro()}{28}{subsubsection.5.6.2.3}%
-\contentsline {subsubsection}{\numberline {5.6.2.4}iniciar()}{28}{subsubsection.5.6.2.4}%
-\contentsline {subsubsection}{\numberline {5.6.2.5}realizarJogada()}{28}{subsubsection.5.6.2.5}%
-\contentsline {subsubsection}{\numberline {5.6.2.6}realizarJogadaIA()}{29}{subsubsection.5.6.2.6}%
-\contentsline {subsubsection}{\numberline {5.6.2.7}validarJogada()}{29}{subsubsection.5.6.2.7}%
-\contentsline {subsubsection}{\numberline {5.6.2.8}verificarVitoria()}{30}{subsubsection.5.6.2.8}%
-\contentsline {subsection}{\numberline {5.6.3}Member Data Documentation}{31}{subsection.5.6.3}%
-\contentsline {subsubsection}{\numberline {5.6.3.1}jogadorAtual}{31}{subsubsection.5.6.3.1}%
-\contentsline {subsubsection}{\numberline {5.6.3.2}tabuleiro}{31}{subsubsection.5.6.3.2}%
-\contentsline {section}{\numberline {5.7}Sistema Class Reference}{31}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{32}{subsection.5.7.1}%
-\contentsline {subsection}{\numberline {5.7.2}Member Function Documentation}{32}{subsection.5.7.2}%
-\contentsline {subsubsection}{\numberline {5.7.2.1}cadastrarJogador()}{32}{subsubsection.5.7.2.1}%
-\contentsline {subsubsection}{\numberline {5.7.2.2}executar()}{32}{subsubsection.5.7.2.2}%
-\contentsline {subsubsection}{\numberline {5.7.2.3}executarPartida()}{33}{subsubsection.5.7.2.3}%
-\contentsline {subsubsection}{\numberline {5.7.2.4}finalizarSistema()}{33}{subsubsection.5.7.2.4}%
-\contentsline {subsubsection}{\numberline {5.7.2.5}listarJogadores()}{34}{subsubsection.5.7.2.5}%
-\contentsline {subsubsection}{\numberline {5.7.2.6}removerJogador()}{34}{subsubsection.5.7.2.6}%
+\contentsline {subsubsection}{\numberline {5.5.2.2}empatePartida()}{22}{subsubsection.5.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.3}getAltura()}{23}{subsubsection.5.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.5.2.4}getLargura()}{23}{subsubsection.5.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.5.2.5}imprimirTabuleiro()}{23}{subsubsection.5.5.2.5}%
+\contentsline {subsubsection}{\numberline {5.5.2.6}iniciar()}{24}{subsubsection.5.5.2.6}%
+\contentsline {subsubsection}{\numberline {5.5.2.7}realizarJogada()}{24}{subsubsection.5.5.2.7}%
+\contentsline {subsubsection}{\numberline {5.5.2.8}realizarJogadaIA()}{24}{subsubsection.5.5.2.8}%
+\contentsline {subsubsection}{\numberline {5.5.2.9}realizarJogadaNaColuna()}{25}{subsubsection.5.5.2.9}%
+\contentsline {subsubsection}{\numberline {5.5.2.10}validarJogada()}{25}{subsubsection.5.5.2.10}%
+\contentsline {subsubsection}{\numberline {5.5.2.11}verificarVitoria()}{26}{subsubsection.5.5.2.11}%
+\contentsline {section}{\numberline {5.6}Reversi Class Reference}{27}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{28}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Member Function Documentation}{28}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.1}empatePartida()}{28}{subsubsection.5.6.2.1}%
+\contentsline {subsubsection}{\numberline {5.6.2.2}getAltura()}{28}{subsubsection.5.6.2.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.3}getLargura()}{29}{subsubsection.5.6.2.3}%
+\contentsline {subsubsection}{\numberline {5.6.2.4}imprimirTabuleiro()}{29}{subsubsection.5.6.2.4}%
+\contentsline {subsubsection}{\numberline {5.6.2.5}iniciar()}{29}{subsubsection.5.6.2.5}%
+\contentsline {subsubsection}{\numberline {5.6.2.6}realizarJogada()}{29}{subsubsection.5.6.2.6}%
+\contentsline {subsubsection}{\numberline {5.6.2.7}realizarJogadaIA()}{30}{subsubsection.5.6.2.7}%
+\contentsline {subsubsection}{\numberline {5.6.2.8}validarJogada()}{30}{subsubsection.5.6.2.8}%
+\contentsline {subsubsection}{\numberline {5.6.2.9}verificarVitoria()}{31}{subsubsection.5.6.2.9}%
+\contentsline {subsection}{\numberline {5.6.3}Member Data Documentation}{32}{subsection.5.6.3}%
+\contentsline {subsubsection}{\numberline {5.6.3.1}jogadorAtual}{32}{subsubsection.5.6.3.1}%
+\contentsline {subsubsection}{\numberline {5.6.3.2}tabuleiro}{32}{subsubsection.5.6.3.2}%
+\contentsline {section}{\numberline {5.7}Sistema Class Reference}{32}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{33}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Member Function Documentation}{33}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}cadastrarJogador()}{33}{subsubsection.5.7.2.1}%
+\contentsline {subsubsection}{\numberline {5.7.2.2}executar()}{33}{subsubsection.5.7.2.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.3}executarPartida()}{34}{subsubsection.5.7.2.3}%
+\contentsline {subsubsection}{\numberline {5.7.2.4}finalizarSistema()}{34}{subsubsection.5.7.2.4}%
+\contentsline {subsubsection}{\numberline {5.7.2.5}listarJogadores()}{35}{subsubsection.5.7.2.5}%
+\contentsline {subsubsection}{\numberline {5.7.2.6}removerJogador()}{35}{subsubsection.5.7.2.6}%
 \contentsline {chapter}{\numberline {6}File Documentation}{37}{chapter.6}%
 \contentsline {section}{\numberline {6.1}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cadastro\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jogadores.hpp File Reference}{37}{section.6.1}%
 \contentsline {section}{\numberline {6.2}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IA.hpp File Reference}{38}{section.6.2}%

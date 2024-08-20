@@ -91,15 +91,18 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classJogo.html#a6d39f30f8fda70bd82c8012a827f19c0">realizarJogada</a>(<span class="keywordtype">int</span> linha, <span class="keywordtype">int</span> coluna) = 0;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classJogo.html#a554702eb069af53759ebb9303b4fb431">realizarJogadaIA</a>() = 0;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classJogo.html#aeebae44b5244f817919d97ecc56e0c94">empatePartida</a>() = 0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassJogo_html_aec1fcd5c1468768ddb96a1eed4bddfbf"><div class="ttname"><a href="classJogo.html#aec1fcd5c1468768ddb96a1eed4bddfbf">Jogo::iniciar</a></div><div class="ttdeci">virtual void iniciar()=0</div><div class="ttdoc">Inicializa o jogo.</div></div>
 <div class="ttc" id="aclassJogo_html_a227dc442e308a7509c870ba80e7f8934"><div class="ttname"><a href="classJogo.html#a227dc442e308a7509c870ba80e7f8934">Jogo::imprimirTabuleiro</a></div><div class="ttdeci">virtual void imprimirTabuleiro()=0</div><div class="ttdoc">Imprime o tabuleiro do jogo.</div></div>
 <div class="ttc" id="aclassJogo_html_a6d39f30f8fda70bd82c8012a827f19c0"><div class="ttname"><a href="classJogo.html#a6d39f30f8fda70bd82c8012a827f19c0">Jogo::realizarJogada</a></div><div class="ttdeci">virtual void realizarJogada(int linha, int coluna)=0</div><div class="ttdoc">Realiza uma jogada.</div></div>
 <div class="ttc" id="aclassJogo_html_a554702eb069af53759ebb9303b4fb431"><div class="ttname"><a href="classJogo.html#a554702eb069af53759ebb9303b4fb431">Jogo::realizarJogadaIA</a></div><div class="ttdeci">virtual void realizarJogadaIA()=0</div><div class="ttdoc">Realiza uma jogada automática pela IA.</div></div>
 <div class="ttc" id="aclassJogo_html_ad89de7e572f507a5e5de2bdc4fecc356"><div class="ttname"><a href="classJogo.html#ad89de7e572f507a5e5de2bdc4fecc356">Jogo::~Jogo</a></div><div class="ttdeci">virtual ~Jogo()=default</div><div class="ttdoc">Destrutor virtual.</div></div>
+<div class="ttc" id="aclassJogo_html_aeebae44b5244f817919d97ecc56e0c94"><div class="ttname"><a href="classJogo.html#aeebae44b5244f817919d97ecc56e0c94">Jogo::empatePartida</a></div><div class="ttdeci">virtual bool empatePartida()=0</div></div>
 <div class="ttc" id="aclassJogo_html_a75bd4ef99ce26b6c3a903b1d4ee3daf5"><div class="ttname"><a href="classJogo.html#a75bd4ef99ce26b6c3a903b1d4ee3daf5">Jogo::verificarVitoria</a></div><div class="ttdeci">virtual bool verificarVitoria()=0</div><div class="ttdoc">Verifica se há um vencedor.</div></div>
 <div class="ttc" id="aclassJogo_html_abe0185d7242d25b39cc3f105dae95313"><div class="ttname"><a href="classJogo.html#abe0185d7242d25b39cc3f105dae95313">Jogo::getLargura</a></div><div class="ttdeci">virtual int getLargura() const =0</div><div class="ttdoc">Obtém a largura do tabuleiro.</div></div>
 <div class="ttc" id="aclassJogo_html_a63f83c33654a10175c16da83e6e1e8fc"><div class="ttname"><a href="classJogo.html#a63f83c33654a10175c16da83e6e1e8fc">Jogo::getAltura</a></div><div class="ttdeci">virtual int getAltura() const =0</div><div class="ttdoc">Obtém a altura do tabuleiro.</div></div>

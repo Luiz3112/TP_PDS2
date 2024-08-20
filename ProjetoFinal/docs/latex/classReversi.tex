@@ -47,7 +47,9 @@ void \mbox{\hyperlink{classReversi_a670da43afa79b98e48afc244d29237f2}{realizar\+
 int \mbox{\hyperlink{classReversi_aa4f8ec26963e0984532852e7ed8c4817}{get\+Altura}} () const override
 \begin{DoxyCompactList}\small\item\em Obtém a altura do tabuleiro do jogo \mbox{\hyperlink{classReversi}{Reversi}}. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classReversi_a8897faa4be4cb8a2e14cd72cc67a4626}{get\+Largura}} () const override
-\begin{DoxyCompactList}\small\item\em Obtém a largura do tabuleiro do jogo \mbox{\hyperlink{classReversi}{Reversi}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Obtém a largura do tabuleiro do jogo \mbox{\hyperlink{classReversi}{Reversi}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classReversi_a263f762f5c00b91c4a801b29f31b2349}{empate\+Partida}} () override
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -63,6 +65,16 @@ Classe responsável pelo gerenciamento do jogo Reverse, derivada da classe \mbox
 A classe \mbox{\hyperlink{classReversi}{Reversi}} gerencia o estado e as regras do jogo \mbox{\hyperlink{classReversi}{Reversi}}. Ela herda todos os métodos da classe \mbox{\hyperlink{classJogo}{Jogo}} e implementa funcionalidades específicas para o jogo \mbox{\hyperlink{classReversi}{Reversi}}, como a alternância de jogadores, validação de jogadas, realização de jogadas e verificação de vitória. 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classReversi_a263f762f5c00b91c4a801b29f31b2349}\label{classReversi_a263f762f5c00b91c4a801b29f31b2349}} 
+\index{Reversi@{Reversi}!empatePartida@{empatePartida}}
+\index{empatePartida@{empatePartida}!Reversi@{Reversi}}
+\doxysubsubsection{\texorpdfstring{empatePartida()}{empatePartida()}}
+{\footnotesize\ttfamily bool Reversi\+::empate\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classJogo_aeebae44b5244f817919d97ecc56e0c94}{Jogo}}.
+
 \mbox{\Hypertarget{classReversi_aa4f8ec26963e0984532852e7ed8c4817}\label{classReversi_aa4f8ec26963e0984532852e7ed8c4817}} 
 \index{Reversi@{Reversi}!getAltura@{getAltura}}
 \index{getAltura@{getAltura}!Reversi@{Reversi}}

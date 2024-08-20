@@ -118,6 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac54682dc8228869dc3bdc15b527fc9df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLig4.html#ac54682dc8228869dc3bdc15b527fc9df">getLargura</a> () const override</td></tr>
 <tr class="memdesc:ac54682dc8228869dc3bdc15b527fc9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna o número de colunas (largura) do tabuleiro.  <a href="classLig4.html#ac54682dc8228869dc3bdc15b527fc9df">More...</a><br /></td></tr>
 <tr class="separator:ac54682dc8228869dc3bdc15b527fc9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16dbdaa6f2fcea48c27c91061df3b067"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLig4.html#a16dbdaa6f2fcea48c27c91061df3b067">empatePartida</a> () override</td></tr>
+<tr class="memdesc:a16dbdaa6f2fcea48c27c91061df3b067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica seu acabou o numero de jogadas possiveis.  <a href="classLig4.html#a16dbdaa6f2fcea48c27c91061df3b067">More...</a><br /></td></tr>
+<tr class="separator:a16dbdaa6f2fcea48c27c91061df3b067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a027adf13666708d6da7d64e4069ac15f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLig4.html#a027adf13666708d6da7d64e4069ac15f">alternarJogador</a> ()</td></tr>
 <tr class="memdesc:a027adf13666708d6da7d64e4069ac15f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alterna o jogador que vai jogar.  <a href="classLig4.html#a027adf13666708d6da7d64e4069ac15f">More...</a><br /></td></tr>
 <tr class="separator:a027adf13666708d6da7d64e4069ac15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +154,44 @@ Public Member Functions</h2></td></tr>
 <p>Alterna o jogador que vai jogar. </p>
 <p>Alterna o jogador atual.</p>
 <p>Este método troca o jogador atual, alternando entre 'X' e 'O'. Se o jogador atual for 'X', ele será alterado para 'O'. Caso contrário, será alterado para 'X'. </p>
+
+</div>
+</div>
+<a id="a16dbdaa6f2fcea48c27c91061df3b067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16dbdaa6f2fcea48c27c91061df3b067">&#9670;&nbsp;</a></span>empatePartida()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Lig4::empatePartida </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Verifica seu acabou o numero de jogadas possiveis. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_numJogadas</td><td>É o numero de posições ja ocupadas no tabuleiro</td></tr>
+    <tr><td class="paramname">_numJogadas</td><td>É o numero de posições ja ocupadas no tabuleiro </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>'true' se numero de jogadas igual ao maximo possivel 'false' caso contrário</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>"_numJogadas" é dividida por 2 pois e chamda 2x na por jogada </dd></dl>
+
+<p>Implements <a class="el" href="classJogo.html#aeebae44b5244f817919d97ecc56e0c94">Jogo</a>.</p>
 
 </div>
 </div>
